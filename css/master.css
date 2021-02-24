@@ -24,7 +24,7 @@ body {
 
 /*INTRO HEADER*/
 .introHeader {
-  background-image: url("/home/q/Documents/scripts/dean_website/img/bkg.png");
+  background-image: url("./img/bkg.png");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -305,7 +305,7 @@ body {
 
 .aboutImg {
 
-  background-image: url("/home/q/Documents/scripts/dean_website/img/about_img.jpeg");
+  background-image: url("./img/about_img.jpeg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -337,7 +337,7 @@ body {
 
 
 .gcImg {
-  background-image: url("/home/q/Documents/scripts/dean_website/img/gran_canaria.jpeg");
+  background-image: url("./img/gran_canaria.jpeg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
