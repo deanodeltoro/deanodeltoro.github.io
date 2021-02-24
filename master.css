@@ -25,13 +25,21 @@ body {
 
 /*INTRO HEADER*/
 .introHeader {
-  background: url("./img/bkg.webp");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  height: 500px;
   display: inline-block;
+  position: relative;
   width: 100%;
+  height: 500px;
+
+  /* height: 500px; */
+
+}
+
+.introHeader img  {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  bottom: 0;
+  object-fit: cover;
 }
 
 .titleContainer {
@@ -301,16 +309,14 @@ body {
   width: 50%;
   float: left;
   display: block;
+  margin: 0;
 }
 
 
-.aboutImg {
-
-  background: url("./img/about_img.jpeg");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  height: 400px;
+.aboutImg, .gcImg {
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .aboutMe a {
@@ -337,16 +343,13 @@ body {
 }
 
 
-.gcImg {
-  background: url("./img/gran_canaria.jpeg");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
+.gcImg, .aboutImg {
   height: 400px;
 }
 
 .aboutMe div {
   margin:  50px 50px 0 50px;
+  position: relative;
 }
 
 .aboutMe p {
@@ -416,6 +419,10 @@ footer a:link, footer a:visited{
   .titleContainer {
     margin: 80px auto;
     text-align: center;
+  }
+
+  .introHeader {
+    height: 400px;
   }
 
   .aboutMe, .adventureClass, .aboutMe a {
