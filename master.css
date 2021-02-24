@@ -24,7 +24,7 @@ body {
 
 /*INTRO HEADER*/
 .introHeader {
-  background-image: url("./img/bkg");
+  background-image: url("./img/bkg.webp");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
