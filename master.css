@@ -1,11 +1,11 @@
 @font-face {
     font-family: "GT Haptik Light";
-    src: url("fonts/GTHaptikLight.ttf");
+    src: url("/fonts/GTHaptikLight.ttf");
 }
 
 @font-face {
     font-family: "Radley";
-    src: url("fonts/Radley-Italic.ttf");
+    src: url("/fonts/Radley-Italic.ttf");
 }
 
 
