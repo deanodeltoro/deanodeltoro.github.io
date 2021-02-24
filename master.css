@@ -12,7 +12,7 @@
 * {
   box-sizing: border-box;
 }
-
+url
 body {
   font-size: 100%;
   font-family: "GT Haptik Light";
@@ -24,7 +24,7 @@ body {
 
 /*INTRO HEADER*/
 .introHeader {
-  background-image: url("./img/bkg.webp");
+  background: url("./img/bkg.webp");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -305,7 +305,7 @@ body {
 
 .aboutImg {
 
-  background-image: url("./img/about_img.jpeg");
+  background: url("./img/about_img.jpeg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -337,7 +337,7 @@ body {
 
 
 .gcImg {
-  background-image: url("./img/gran_canaria.jpeg");
+  background: url("./img/gran_canaria.jpeg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
