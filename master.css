@@ -1,11 +1,11 @@
 @font-face {
     font-family: "GT Haptik Light";
-    src: url("../fonts/GTHaptikLight.ttf");
+    src: url("./fonts/GTHaptikLight.ttf");
 }
 
 @font-face {
     font-family: "Radley";
-    src: url("../fonts/Radley-Italic.ttf");
+    src: url("./fonts/Radley-Italic.ttf");
 }
 
 
@@ -24,7 +24,7 @@ body {
 
 /*INTRO HEADER*/
 .introHeader {
-  background-image: url("./bkg.png");
+  background-image: url("./img/bkg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -305,7 +305,7 @@ body {
 
 .aboutImg {
 
-  background-image: url("./about_img.jpeg");
+  background-image: url("./img/about_img.jpeg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -337,7 +337,7 @@ body {
 
 
 .gcImg {
-  background-image: url("./gran_canaria.jpeg");
+  background-image: url("./img/gran_canaria.jpeg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
