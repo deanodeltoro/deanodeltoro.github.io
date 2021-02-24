@@ -305,7 +305,7 @@ body {
 
 .aboutImg {
 
-  background-image: url("./img/about_img.jpeg");
+  background-image: url("../img/about_img.jpeg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -337,7 +337,7 @@ body {
 
 
 .gcImg {
-  background-image: url("./img/gran_canaria.jpeg");
+  background-image: url("../img/gran_canaria.jpeg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
