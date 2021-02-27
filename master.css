@@ -107,7 +107,7 @@ body {
 
 .mainNav ul li{
   list-style-type: none;
-  display: inline;
+  display: inline-block;
 }
 
 .mainNav a {
@@ -116,6 +116,11 @@ body {
   color: black;
   font-weight: bolder;
   text-transform: uppercase;
+}
+
+.mainNav a:hover{
+  border-bottom: 3px solid #2B3856;
+  padding-bottom: 5px; 
 }
 
 
