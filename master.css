@@ -9,6 +9,10 @@
     src: url("./fonts/Radley-Italic.ttf");
 }
 
+@font-face {
+    font-family: "Covered By Your Grace";
+    src: url("./fonts/CoveredByYourGrace-Regular.ttf");
+}
 
 
 * {
@@ -174,7 +178,7 @@ body {
 
 
 .adventureButton {
-  font-family: inherit;
+  font-family: "Covered By Your Grace";
   font-size: 2em;
   font-weight: bold;
   text-align: center;
@@ -192,6 +196,7 @@ body {
 .adventureClass p {
   padding: 0px;
   text-align: justify;
+  text-indent: 20px;
 }
 
 .adventureClass h1 {
@@ -200,11 +205,14 @@ body {
   padding: 30px 0 0 20px;
   text-transform: uppercase;
   border-left: 20px solid #2B3856;
+  font-family: "Covered By Your Grace";
 }
 
 .adventureClass span {
   color: #2B3856;
   display: inline-block;
+  font-family: inherit;
+  font-size: 1.5em;
 }
 .adventureClass div {
   margin:  50px 50px 0 50px;
@@ -301,18 +309,19 @@ body {
 .messageClass {
   padding: 50px;
   font-size: 2em;
-  font-variant: small-caps;
-  color: white;
+  font-family: "Covered By Your Grace";
+  color: #ccfefe;
   text-align: center;
-  font-weight: bold;
-  background-color: teal;
+  /*font-weight: bold;*/
+  background-color: #006566;
   margin: 0;
+  /*text-shadow: 0px 0px 5px #99feff;*/
 }
 
 
 /*ABOUT ME*/
 .aboutMe {
-  width: 50%;
+   width: 50%;
   float: left;
   display: block;
   margin: 0;
@@ -361,10 +370,13 @@ body {
 .aboutMe p {
   padding: 0 0 0 20px;
   text-align: justify;
+  text-indent: 20px;
+
 }
 
 .aboutMe h1 {
   font-size: 3em;
+  font-family: "Covered By Your Grace";
   margin: 0;
   padding: 0 0 0 20px;
   text-transform: uppercase;
