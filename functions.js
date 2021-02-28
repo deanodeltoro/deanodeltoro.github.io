@@ -40,7 +40,8 @@ var slideId = ["gambuesaSlideshow", "pintoSlideshow",
 "hornosSlideshow","nievesSlideshow", "hondoSlideshow",
 "azuajeVirgenSlideshow","charcoAzulSlideshow","teriscalSlideshow",
 "gambuesaDataSlideshow", "mimbreDataSlideshow", "playaAldeaSlideshow",
-"pinoGordoSlideshow", "yeguasSlideshow","setoGrilloSlideshow"]
+"pinoGordoSlideshow", "yeguasSlideshow","setoGrilloSlideshow",
+"guiguiSlideshow"]
 
 
 
