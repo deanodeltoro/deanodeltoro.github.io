@@ -231,7 +231,8 @@ body {
 .guayadequeSlideshow, .oscuroSlideshow, .ventanaNubloSlideshow,
 .hornosSlideshow, .nievesSlideshow, .hondoSlideshow,
 .azuajeVirgenSlideshow, .charcoAzulSlideshow, .teriscalSlideshow,
-.gambuesaDataSlideshow, .mimbreDataSlideshow{
+.gambuesaDataSlideshow, .mimbreDataSlideshow, .playaAldeaDataSlideshow,
+.pinoGordoSlideshow {
   display: none
 }
 
