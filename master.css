@@ -230,7 +230,8 @@ body {
 .BcodelToroSlideshow, .llanosCircularoSlideshow,
 .guayadequeSlideshow, .oscuroSlideshow, .ventanaNubloSlideshow,
 .hornosSlideshow, .nievesSlideshow, .hondoSlideshow,
-.azuajeVirgenSlideshow, .charcoAzulSlideshow, .teriscalSlideshow{
+.azuajeVirgenSlideshow, .charcoAzulSlideshow, .teriscalSlideshow,
+.gambuesaDataSlideshow{
   display: none
 }
 
