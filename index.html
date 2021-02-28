@@ -21,11 +21,44 @@
         <nav class="mainNav">
             <ul>
                 <li><a href="#">h0me</a></li>
-                <li><a href="#adventures">adventures</a></li>
+                <li><a href="#adventures" onclick="openNav()"> adventures</a></li>
                 <li><a href="#about">ab0ut</a></li>
                 <li><a href="#theContact">c0ntact</a></li>
             </ul>
         </nav>
+
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <ul>
+                <li onclick="showHikeMenu(22)">Presas Gambuesa/Ayagaures</li>
+                <li onclick="showHikeMenu(21)">Presa de Pinto</li>
+                <li onclick="showHikeMenu(20)">Presa de Tirajana/La Sorrueda</li>
+                <li onclick="showHikeMenu(19)">Barranco de Berriel</li>
+                <li onclick="showHikeMenu(18)">Ayagaures to Tunte</li>
+                <li onclick="showHikeMenu(17)">Barranco del Toro</li>
+                <li onclick="showHikeMenu(16)">Llanos de la Pez (circular route)</li>
+                <li onclick="showHikeMenu(15)">Barranco de Guayadeque</li>
+                <li onclick="showHikeMenu(14)">Barranco Oscuro</li>
+                <li onclick="showHikeMenu(13)">Llanos de la Pez – Ventana del Nublo</li>
+                <li onclick="showHikeMenu(12)">Presa de Los Hornos – Llanos de la Pez</li>
+                <li onclick="showHikeMenu(11)">Barranco Guayadeque – Pico de Las Nieves</li>
+                <li onclick="showHikeMenu(10)">Barranco del Hondo</li>
+                <li onclick="showHikeMenu(9)">Firgas – Barranco De Azuaje – Barranco de la Virgen</li>
+                <li onclick="showHikeMenu(8)">Charco Azul</li>
+                <li onclick="showHikeMenu(7)">Barranco de Teriscal del Aguila</li>
+                <li onclick="showHikeMenu(6)">Presa de la Gambuesa – Barranco de la Data</li>
+                <li onclick="showHikeMenu(5)">Presa de Los Perez – Tamadaba – Mirador Llanos de la Mimbre</li>
+                <li onclick="showHikeMenu(4)">Playa de La Aldea – La cola del Dragon (The Dragons Tail)</li>
+                <li onclick="showHikeMenu(3)">Barranco del Pino Gordo</li>
+                <li onclick="showHikeMenu(2)">Degollada de Las Yeguas – Fataga</li>
+                <li onclick="showHikeMenu(1)">Ingenio – La Atalaya – Seto grillo</li>
+                <li onclick="showHikeMenu(0)">Tasartico – Playa de Güigüi</li>
+
+
+            </ul>
+          </div>
+        </div>
         <article>
             <div class="titleContainer">
                 <h2>the adventures of</h2>
@@ -45,9 +78,7 @@
         <section id="adventures" class="clearfix">
         <a class="adventureButton adventureButtonNext" onclick="nextHike()"> next <i class="fas fa-caret-square-right"></i></a>
         <a class="adventureButton adventureButtonPrevious" onclick="previousHike()"> <i class="fas fa-caret-square-left"></i>back</a>
-
-
-
+        
         <div id="guigui" class="hike">
                 <article class="adventureClass">
                 <div>

@@ -2,6 +2,16 @@
 var counter = 0;
 all = document.getElementsByClassName('hike');
 
+function showHikeMenu(n) {
+  closeNav();
+  showHike(n);
+    for (var i = 0; all.length; ++i){
+    if(i != n){
+      hideHike(i);
+    }
+  } 
+
+}
 
 function nextHike() {
 
@@ -17,6 +27,7 @@ function nextHike() {
   }
 
 }
+
 
 function previousHike() {
 
@@ -73,4 +84,13 @@ function showSlides(n, no) {
      x[i].style.display = "none";
   }
   x[slideIndex[no]-1].style.display = "block";
+}
+
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
 }

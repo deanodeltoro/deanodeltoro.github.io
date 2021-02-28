@@ -27,6 +27,61 @@ body {
 }
 
 
+
+/*OVERLAY*/
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(43,56,86, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 5%;
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+  overflow: scroll;
+}
+
+
+
+.overlay ul li {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.overlay a {
+	text-decoration: none;
+	color:white;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+
+
 /*INTRO HEADER*/
 .introHeader {
   display: inline-block;
@@ -452,6 +507,14 @@ footer a:link, footer a:visited{
     text-align: center;
   }
 
+
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+
   .introHeader {
     height: 400px;
   }
@@ -481,9 +544,13 @@ footer a:link, footer a:visited{
   }
 
 
+
   .mainNav a {
     font-size: 0.7em;
   }
+
+
+
 
   .slideshow-container{
     width: 100%;
