@@ -186,12 +186,23 @@ body {
   background-color: transparent;
   padding: 10px 20px;
   color: #2B3856;
+}
+
+  .adventureButtonNext {
   float: right;
   position: absolute;
   right: 50%;
   top: 5%;
+  }
 
-}
+  .adventureButtonPrevious {
+  	  float: left;
+  position: absolute;
+  right: 60%;
+  top: 5%;
+    
+  }
+
 
 .adventureClass p {
   padding: 0px;
@@ -485,7 +496,14 @@ footer a:link, footer a:visited{
     font-size: 11px
   }
 
-  .adventureButton {
+  .adventureButtonNext {
     top: 0;
     right: 5%;
   }
+
+  .adventureButtonPrevious {
+    top: 0;
+    right: 40%;
+  }
+
+

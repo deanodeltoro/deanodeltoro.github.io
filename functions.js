@@ -18,6 +18,21 @@ function nextHike() {
 
 }
 
+function previousHike() {
+
+  if (counter == 0){
+    hideHike(counter);
+    counter = all.length -1;
+    showHike(counter);
+    }
+  else {
+    counter -= 1;
+    showHike(counter);
+    hideHike(counter+1)
+  }
+
+}
+
 
 
 function showHike(n) {
