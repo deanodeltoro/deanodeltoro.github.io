@@ -29,7 +29,9 @@ function hideHike(n) {
 }
 
 
-var slideIndex = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
+var slideIndex = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
+
+// var slideIndex =[1];
 
 var slideId = ["gambuesaSlideshow", "pintoSlideshow",
 "tirajanaSlideshow","berrielSlideshow","Ayagaures2TunteSlideshow",
@@ -38,7 +40,7 @@ var slideId = ["gambuesaSlideshow", "pintoSlideshow",
 "hornosSlideshow","nievesSlideshow", "hondoSlideshow",
 "azuajeVirgenSlideshow","charcoAzulSlideshow","teriscalSlideshow",
 "gambuesaDataSlideshow", "mimbreDataSlideshow", "playaAldeaSlideshow",
-"pinoGordoSlideshow", "yeguasSlideshow"]
+"pinoGordoSlideshow", "yeguasSlideshow","setoGrilloSlideshow"]
 
 
 
