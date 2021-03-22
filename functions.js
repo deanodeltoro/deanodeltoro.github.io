@@ -1,96 +1,29 @@
+function toggleInfo(){
+	let x = document.activeElement;
+	let y = x.previousElementSibling;
 
-var counter = 0;
-all = document.getElementsByClassName('hike');
-
-function showHikeMenu(n) {
-  closeNav();
-  showHike(n);
-    for (var i = 0; all.length; ++i){
-    if(i != n){
-      hideHike(i);
-    }
-  } 
-
-}
-
-function nextHike() {
-
-  if (counter == all.length -1){
-    hideHike(counter);
-    counter = 0;
-    showHike(counter);
-    }
-  else {
-    counter += 1;
-    showHike(counter);
-    hideHike(counter-1)
-  }
-
-}
-
-
-function previousHike() {
-
-  if (counter == 0){
-    hideHike(counter);
-    counter = all.length -1;
-    showHike(counter);
-    }
-  else {
-    counter -= 1;
-    showHike(counter);
-    hideHike(counter+1)
-  }
-
+	// alert(x.height);
+	if (y.style.height != "150px") {
+		y.style.height = "150px";
+		y.style.overflowY = "scroll";
+		x.innerHTML = "&#61544;";
+	} 
+	else { 
+		y.style.height = "0px";
+		x.innerHTML = "&#61543;";
+	}
 }
 
 
 
-function showHike(n) {
-  all[n].style.display="block";
+function myFunction() {
+
+	var area = document.getElementById("areas").value.replace(/\s/g,"");
+	
+	for (let el of document.querySelectorAll('.hikeContainer')) 
+	el.style.display = 'none';
+
+	for (let el of document.querySelectorAll('.hikeContainer' + "."+ area)) 
+	el.style.display = 'flex';
 }
 
-function hideHike(n) {
-  all[n].style.display="none";
-}
-
-
-var slideIndex = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
-
-// var slideIndex =[1];
-
-var slideId = ["gambuesaSlideshow", "pintoSlideshow",
-"tirajanaSlideshow","berrielSlideshow","Ayagaures2TunteSlideshow",
-"BcodelToroSlideshow","llanosCircularoSlideshow",
-"guayadequeSlideshow","oscuroSlideshow","ventanaNubloSlideshow",
-"hornosSlideshow","nievesSlideshow", "hondoSlideshow",
-"azuajeVirgenSlideshow","charcoAzulSlideshow","teriscalSlideshow",
-"gambuesaDataSlideshow", "mimbreDataSlideshow", "playaAldeaSlideshow",
-"pinoGordoSlideshow", "yeguasSlideshow","setoGrilloSlideshow",
-"guiguiSlideshow"]
-
-
-
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
-
-function showSlides(n, no) {
-  var i;
-  var x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex[no]-1].style.display = "block";
-}
-
-
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}

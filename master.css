@@ -1,576 +1,283 @@
-@font-face {
-    font-family: "GT Haptik Light";
-    src: url("./fonts/GTHaptikLight.ttf");
-
+* {
+    box-sizing: border-box;
+    padding: 0;
+	margin: 0;
 }
 
-@font-face {
-    font-family: "Radley";
-    src: url("./fonts/Radley-Italic.ttf");
-}
 
 @font-face {
     font-family: "Covered By Your Grace";
     src: url("./fonts/CoveredByYourGrace-Regular.ttf");
 }
 
+@font-face {
+    font-family: "GT Haptik Light";
+    src: url("./fonts/GTHaptikLight.ttf");
 
-* {
-  box-sizing: border-box;
 }
 
+:root {
+    --myLightPurple: #ecdefd;
+    --myTurquois: #75e2bb;
+    --myPurple: #b53cc1;
+    --myDarkGreen: #1d7563;
+    --myBlue: #40c8e9;
+    --myLightGreen: #269357;
+}
 
 body {
-  font-size: 100%;
-  font-family: "GT Haptik Light";
-  margin: 0px;
-}
+	background: whitesmoke;
+	font-size: 16px;
+	font-family: "GT Haptik";
 
-
-
-/*OVERLAY*/
-
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgba(43,56,86, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 5%;
-  width: 100%;
-  text-align: left;
-  margin-top: 30px;
-  overflow: scroll;
-}
-
-
-
-.overlay ul li {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 1em;
-  color: white;
-  display: block;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.overlay a {
-	text-decoration: none;
-	color:white;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-
-
-
-/*INTRO HEADER*/
-.introHeader {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  height: 500px;
-
-  /* height: 500px; */
 
 }
 
-.introHeader img  {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  bottom: 0;
-  object-fit: cover;
+#logo {
+	font-family: "Covered by your grace";
+	line-height: 1.5em;
 }
 
-.titleContainer {
-  width: 80%;
-  margin: 50px 50px;
+#logo span {
+	font-size: 1em;
+	text-transform: lowercase;
+	color: var(--myLightGreen);
 }
-
-
-
-.titleContainer > h1, h2, h3 {
-  margin: 5px;
-}
-
-
-.titleContainer h1 {
-  font-size: 2.5em;
-  text-transform: uppercase;
-  background-color: #2B3856;
-  color: white;
-  display: inline-block;
-  padding: 0 20px;
-  animation-name: goIneffect;
-  animation-duration: 4s;
-  box-shadow: 10px 10px 20px gray;
-}
-
-
- @keyframes goIneffect {
-  from {background-color: white;}
-  to {background-color: #2B3856;}
-}
-
-@keyframes goIneffectTwo {
-  from {color: white;}
-  to {color: black;}
-} 
-
-
-.titleContainer h2, h3 {
-  font-size: 1.5em;
-  font-variant: small-caps;
-  /* animation-name: goIneffectTwo;
-  animation-duration: 4s; */
+#logo p {
+	font-size: 2em;
+	text-transform: capitalize;
+	color: var(--myDarkGreen);
 
 }
 
 
 
 
-/*MAIN NAVIGATION*/
-.mainNav {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  background-color: rgba(255,255,255,0.9);
-
+.mainWrapper {
+	display: flex;
+	flex-direction: column;
+	width: 80vw;
+	border: 1px dashed white;
+	margin: 0 auto;
+	gap: 20px;
 }
 
-.mainNav ul {
-  text-align: center;
-  list-style-type: none;
-  float: right;
-
+nav {
+	/* border: 1px solid black; */
+	text-align: center;
+	background: var(--myTurquois);
 }
 
-.mainNav ul li{
-  list-style-type: none;
-  display: inline-block;
+.areas {
+	padding: 15px;
+	width: 100%;
+	text-transform: uppercase;
+	background: transparent;
+	border: none;
+	font-family: inherit;
+	font-size: 0.8em;
 }
 
-.mainNav a {
-  text-decoration: none;
-  margin-right: 20px;
-  color: black;
-  font-weight: bolder;
-  text-transform: uppercase;
+option {
+	background: var(--myTurquois);
+	font-family: inherit;
+
 }
+/* .areas option {
+	color: var(--myDarkGreen);
+	font-weight: bold;
+	scroll-snap-align: center;
+	min-width: 100%;
+	text-transform: uppercase;
+	font-size: 0.9em;	
+} */
 
-.mainNav a:hover{
-  border-bottom: 3px solid #2B3856;
-  padding-bottom: 5px; 
+.areas li::before{
+	content: "< ";
 }
-
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-
-/*ADVENTURES*/
-
-.hike {
-  width: 100%;
-  clear: both;
-  display: none;
-}
-
-.adventureClass {
-  width: 50%;
-  float: left;
-  display: block;
-
+.areas li::after{
+	content: " >";
 }
 
 
-.routeDetails {
-  list-style-type: none;
-  color: gray;
-  list-style-position: inside;
-  margin: 0;
-  padding: 0 0 50px 0;
-  display: none;
+.hikeContainer {
+	display: flex;
+	flex-direction: column;
+	max-height: 500px;	
+	width: 80vw;
+	border-radius: 5px;
 }
 
-.routeDetails li {
-  display: inline-block;
-  float: left;
-  margin: 5px 15px;
+.imageGallery{
+	display: flex;
+	overflow-x: auto;
+	max-width: 80vw;
+	scroll-snap-type: x proximity;
+	gap: 10px;
+}
+
+.hikeContainer img {
+	scroll-snap-align: end;
+	width: 80vw;
+	/* max-height: 25vh; */
+	/* height: 30vh; */
+	object-fit: cover;
+	border-radius: 5px 5px 0 0;
+
+}
+
+table {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+}
+
+
+.hikeInfo p {
+	text-indent: 15px;
+	text-align: justify;
+	padding: 15px;
+}
+.hikeInfo p::before {
+	content: "BIO : ";
+	font-weight: bold;
+	color: var(--myDarkGreen);
+}
+
+.hikeContainer table  {
+	background: var(--myLightPurple);
+
+}
+
+.hikeContainer table thead{
+	text-transform: capitalize;
+	color: var(--myDarkGreen);
 
 }
 
 
+.hikeContainer table tbody tr td:nth-child(1) {
+	color: var(--myLightGreen);
+	text-transform: uppercase;
+	font-size: 0.8em;
+	padding-bottom: 15px;
+}
 
-#adventures {
-  position: relative;
-  background-color: #E5E4E2;
+.hikeLength, .hikeTime, .hikeLog{
+	color: gray;
+	font-size: 0.8em;
+
+}
+
+.hikeLength::after {
+	content: " km";
+}
+.hikeLength::before {
+	content: " \f4d7  ";
+}
+
+.hikeTime::before {
+	content: " \F017  ";
+}
+
+.hikeLog::before {
+	content: " \F073  ";
+}
+
+.hikeLength::before,
+.hikeTime::before, 
+.hikeLog::before {
+	font-family: "Font Awesome 5 Free Solid";
+	color: var(--myLightGreen);
+}
+
+.hikeTime::after {
+	content: " h";
+}
+
+.hikeContainer button {
+	border: none;
+	outline: none;
+	background: none;
+	align-self: center;
+	font-family: "Font Awesome 5 Free Solid";
+	color: var(--myLightPurple);
+	background-color: var(--myLightGreen);
+	width: 100%;
+	padding: 5px;
+	border-radius: 0 0 5px 5px;
+	/* animation-name: pulsingLight;
+	animation-duration: 2s;
+	animation-iteration-count: infinite; */
+}
+
+.hikeInfo {
+	height: 0px;
+	overflow-y: hidden;
+	transition: height 1s;
+	background: var(--myLightPurple);
+
 }
 
 
-
-
-.adventureButton {
-  font-family: inherit;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: transparent;
-  padding: 10px 20px;
-  color: #2B3856;
+/*ANIMATIONS*/
+@keyframes pulsingLight {
+	0%   { opacity: 0.6;}
+	50%  { opacity: 1.0;}
+	100% { opacity: 0.6;}
 }
 
-  .adventureButtonNext {
-  float: right;
-  position: absolute;
-  right: 50%;
-  top: 5%;
+/*HIDE SCROLL BARS*/
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScrollBars::-webkit-scrollbar {
+	display: none;
   }
-
-  .adventureButtonPrevious {
-  	  float: left;
-  position: absolute;
-  right: 60%;
-  top: 5%;
-    
-  }
-
-
-.adventureClass p {
-  padding: 0px;
-  text-align: justify;
-  text-indent: 20px;
-}
-
-.adventureClass h1 {
-  font-size: 1em;
-  margin: 0;
-  padding: 30px 0 0 20px;
-  text-transform: uppercase;
-  border-left: 20px solid #2B3856;
-  font-family: "Covered By Your Grace";
-}
-
-.adventureClass span {
-  color: #2B3856;
-  display: inline-block;
-  font-family: inherit;
-  font-size: 1.5em;
-}
-.adventureClass div {
-  margin:  50px 50px 0 50px;
-}
-
-.adventureClass img {
-  width: 100%;
-}
-
-
-
-/*SLIDESHOW GALLERY */
-.gambuesaSlideshow, .pintoSlideshow,
-.tirajanaSlideshow, .Ayagaures2TunteSlideshow,
-.BcodelToroSlideshow, .llanosCircularoSlideshow,
-.guayadequeSlideshow, .oscuroSlideshow, .ventanaNubloSlideshow,
-.hornosSlideshow, .nievesSlideshow, .hondoSlideshow,
-.azuajeVirgenSlideshow, .charcoAzulSlideshow, .teriscalSlideshow,
-.gambuesaDataSlideshow, .mimbreDataSlideshow, .playaAldeaDataSlideshow,
-.pinoGordoSlideshow, .yeguasSlideshow, .setoGrilloSlideshow, .guiguiSlideshow {
-  display: none
-}
-
-
-/* Slideshow container */
-.slideshow-container {
-  width: 50%;
-  position: relative;
-  margin: auto;
-  float: left;
-
-}
-
-.slideshow-container img {
-  vertical-align: middle;
-  width:100%;
-  height: 500px;
-  object-fit: cover;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-
-
-@-webkit-keyframes fade {
-  from {opacity: .7}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .7}
-  to {opacity: 1}
-}
-
-
-
-
-/*MIDDLE MESSAGE*/
-.messageClass {
-  padding: 50px;
-  font-size: 2em;
-  font-family: "Covered By Your Grace";
-  color: #ccfefe;
-  text-align: center;
-  /*font-weight: bold;*/
-  background-color: #006566;
-  margin: 0;
-  /*text-shadow: 0px 0px 5px #99feff;*/
-}
-
-
-/*ABOUT ME*/
-.aboutMe {
-   width: 50%;
-  float: left;
-  display: block;
-  margin: 0;
-}
-
-
-.aboutImg, .gcImg {
-  width: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.aboutMe a {
-  font-family: inherit;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: transparent;
-  padding: 10px 20px;
-  border: 2px solid #2B3856;
-  color: #2B3856;
-  float: right;
-  margin:  0 0 50px 0;
-}
-
-.aboutMe a:link, .aboutMe a:visited {
-  text-decoration: none;
-}
-
-.aboutMe a:hover, .aboutMe a:active {
-  background-color: #2B3856;
-  color:#98AFC7;
-  transition: 1s;
-}
-
-
-.gcImg, .aboutImg {
-  height: 400px;
-}
-
-.aboutMe div {
-  margin:  50px 50px 0 50px;
-  position: relative;
-}
-
-.aboutMe p {
-  padding: 0 0 0 20px;
-  text-align: justify;
-  text-indent: 20px;
-
-}
-
-.aboutMe h1 {
-  font-size: 3em;
-  font-family: "Covered By Your Grace";
-  margin: 0;
-  padding: 0 0 0 20px;
-  text-transform: uppercase;
-  border-left: 20px solid #2B3856;
-}
-
-/*CONTACT*/
-footer {
-  width: 100%;
-  height: 250px;
-  background-color: #2B3856;
-  display: block;
-  color: #98AFC7;
-}
-
-footer  * {
-  margin: 0;
-  }
-
-footer div {
-margin: 50px;
-display: inline-block;
-/* border: 2px solid white; */
-}
-
-footer h2 {
-  text-transform: uppercase;
-}
-
-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer ul li {
-display: inline;
-}
-
-footer a {
-  color: inherit;
-}
-
-footer a:link, footer a:visited{
-  text-decoration: none;
-  margin: 0 15px 0 0;
-}
-
-
-
-/*SLIDESHOW GALLERY */
-
-
-
-
-/*RESPONSIVE LAYOUT*/
-@media screen and (max-width: 850px) {
-  .titleContainer {
-    margin: 80px auto;
-    text-align: center;
-  }
-
-
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-
-  .introHeader {
-    height: 400px;
-  }
-
-  .aboutMe, .adventureClass, .aboutMe a {
-    width: 100%;
-  }
-
-  .aboutImg, .gcImg {
-    height: 250px;
-  }
-
-  .mainNav {
-    width: 100%;
-    padding: 0;
-    display: block;
-
-
-  }
-
-  .mainNav ul  {
-    text-align: center;
-    display: block;
-    padding: 0;
-    margin: 10px auto;
-
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hideScrollBars {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
   }
 
 
 
-  .mainNav a {
-    font-size: 0.7em;
-  }
+  .arucas, .sanbartolomedetirajana, .santaluciadetirajana {
+	display: none;
+}
+
+@media only screen and (min-width: 480px) {
+	.mainWrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 90vw;
+	}
+
+	.hikeContainer, .imageGallery, .imageGallery img {
+		width: 40vw;	
+		max-height: 400px;
+	}
+
+	
+	nav {
+		flex-basis: 100%;
+
+	}
+}
 
 
+@media only screen and (min-width: 770px) {
+	.mainWrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+		/* justify-content: flex-start; */
+		width: 100vw;
+	}
+	.hikeContainer, .imageGallery, .imageGallery img {
+		width: 20vw;		
+		/* align-items: stretch; */
+	}
+	nav {
+		flex: 0 0 100%;
 
-
-  .slideshow-container{
-    width: 100%;
-  }
-
-  .slideshow-container img {
-    height: 400px;
-  }
-  .prev, .next,.text {
-    font-size: 11px
-  }
-
-  .adventureButtonNext {
-    top: 0;
-    right: 5%;
-  }
-
-  .adventureButtonPrevious {
-    top: 0;
-    right: 40%;
-  }
-
-
+}
