@@ -2,14 +2,19 @@
     box-sizing: border-box;
     padding: 0;
 	margin: 0;
+	outline: none;
 }
 
 
 @font-face {
-    font-family: "Covered By Your Grace";
-    src: url("./fonts/CoveredByYourGrace-Regular.ttf");
+    font-family: "Font Awesome 5 Free Solid";
+    src: url("./fonts/FontAwesome5FreeSolid.otf");
 }
 
+@font-face {
+    font-family: "Font Awesome 5 Brands Regular";
+    src: url("./fonts/FontAwesome5BrandsRegular400.otf");
+}
 
 
 :root {
