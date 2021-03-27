@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0;
 	margin: 0;
-	outline: none;
 }
 
 
@@ -33,7 +32,6 @@ body {
 h2 {
 	text-align: center;
 	text-transform: uppercase;
-	text-align: left;
 	font-family: "Unica One";
 	color: var(--myDarkGreen);
 	font-size: 2em;
