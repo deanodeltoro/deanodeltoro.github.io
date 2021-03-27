@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
 	margin: 0;
+	outline: none;
 }
 
 
@@ -10,11 +11,7 @@
     src: url("./fonts/CoveredByYourGrace-Regular.ttf");
 }
 
-@font-face {
-    font-family: "GT Haptik Light";
-    src: url("./fonts/GTHaptikLight.ttf");
 
-}
 
 :root {
     --myLightPurple: #ecdefd;
@@ -28,99 +25,167 @@
 body {
 	background: whitesmoke;
 	font-size: 16px;
-	font-family: "GT Haptik";
+	font-family: "Unica One";
 
 
 }
 
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	text-align: left;
+	font-family: "Unica One";
+	color: var(--myDarkGreen);
+	font-size: 2em;
+}
+
+
 #logo {
-	font-family: "Covered by your grace";
+	font-family: "Unica One";
 	line-height: 1.5em;
+	padding: 10px 0;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	background: var(--myTurquois);
 }
 
 #logo span {
-	font-size: 1em;
-	text-transform: lowercase;
-	color: var(--myLightGreen);
+	color: var(--myDarkGreen);
 }
 #logo p {
 	font-size: 2em;
-	text-transform: capitalize;
+	
+}
+
+.spanIcon {
+	font-family: "Font Awesome 5 Free Solid";
+}
+
+.spanIcon::before, .spanIcon::after {
+	content: "\2E3B";
+	padding: 0 10px;
 	color: var(--myDarkGreen);
 
 }
 
 
+nav ul  {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	font-size: 0.8em;
+	background: var(--myTurquois);
+}
 
+hr {
+	border: 1px solid var(--myDarkGreen);
+}
+
+
+nav ul li {
+	padding: 7px;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+select {
+	flex: 100%;
+	
+}
+
+
+.municipalityClass {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	/* border: 2px solid red; */
+	justify-items: center;
+
+}
+
+.municipalityClass img {
+	width: 80px;
+}
 
 .mainWrapper {
 	display: flex;
-	flex-direction: column;
-	width: 80vw;
-	border: 1px dashed white;
-	margin: 0 auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 20px;
+	padding: 20px 0 0 0;
 }
 
 nav {
-	/* border: 1px solid black; */
+	width: 100%;;
 	text-align: center;
-	background: var(--myTurquois);
 }
 
 .areas {
 	padding: 15px;
 	width: 100%;
 	text-transform: uppercase;
-	background: transparent;
+	background: whitesmoke;
 	border: none;
 	font-family: inherit;
 	font-size: 0.8em;
 }
 
-option {
-	background: var(--myTurquois);
-	font-family: inherit;
 
-}
-/* .areas option {
-	color: var(--myDarkGreen);
-	font-weight: bold;
-	scroll-snap-align: center;
-	min-width: 100%;
+.buttonClass {
+	text-decoration: none;
+	align-self: flex-end;
+	background: var(--myBlue);
+	color:white;
+	padding: 10px;
 	text-transform: uppercase;
-	font-size: 0.9em;	
-} */
-
-.areas li::before{
-	content: "< ";
-}
-.areas li::after{
-	content: " >";
+	text-align: center;
+	text-indent: 0;
+	min-width: 150px;
+	align-self: flex-end;
+	font-family: "Unica One";
 }
 
 
 .hikeContainer {
+
 	display: flex;
 	flex-direction: column;
-	max-height: 500px;	
-	width: 80vw;
+	align-items: stretch;
+	max-height: 400px;	
+	max-width: 90vw;
 	border-radius: 5px;
+	box-shadow: -5px 5px 10px 3px gray;
+	margin: 0 0 15px 0;
+	/* background: whitesmoke; */
+
 }
 
 .imageGallery{
 	display: flex;
 	overflow-x: auto;
-	max-width: 80vw;
-	scroll-snap-type: x proximity;
+	max-width: 100vw;
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch; 
 	gap: 10px;
+	background: whitesmoke;
 }
 
 .hikeContainer img {
-	scroll-snap-align: end;
-	width: 80vw;
+	scroll-snap-align: center;
+	scroll-snap-stop: always;
+	max-width: 100%;
 	/* max-height: 25vh; */
-	/* height: 30vh; */
 	object-fit: cover;
 	border-radius: 5px 5px 0 0;
 
@@ -134,25 +199,25 @@ table {
 
 
 .hikeInfo p {
-	text-indent: 15px;
+	text-indent: 30px;
 	text-align: justify;
 	padding: 15px;
+	font-family: 'Roboto';
 }
 .hikeInfo p::before {
 	content: "BIO : ";
-	font-weight: bold;
-	color: var(--myDarkGreen);
+	font-weight: bolder;
+	color: white;
 }
 
 .hikeContainer table  {
-	background: var(--myLightPurple);
+	background: white;
 
 }
 
 .hikeContainer table thead{
 	text-transform: capitalize;
 	color: var(--myDarkGreen);
-
 }
 
 
@@ -166,12 +231,17 @@ table {
 .hikeLength, .hikeTime, .hikeLog{
 	color: gray;
 	font-size: 0.8em;
-
 }
 
 .hikeLength::after {
 	content: " km";
 }
+
+.hikeTime::after {
+	content: " h";
+}
+
+
 .hikeLength::before {
 	content: " \f4d7  ";
 }
@@ -191,40 +261,95 @@ table {
 	color: var(--myLightGreen);
 }
 
-.hikeTime::after {
-	content: " h";
-}
+
 
 .hikeContainer button {
 	border: none;
-	outline: none;
-	background: none;
-	align-self: center;
 	font-family: "Font Awesome 5 Free Solid";
-	color: var(--myLightPurple);
+	color:white;
 	background-color: var(--myLightGreen);
 	width: 100%;
 	padding: 5px;
 	border-radius: 0 0 5px 5px;
-	/* animation-name: pulsingLight;
+	animation-name: pulsingLight;
 	animation-duration: 2s;
-	animation-iteration-count: infinite; */
+	animation-iteration-count: infinite;
+	align-self: flex-end;
 }
 
 .hikeInfo {
 	height: 0px;
 	overflow-y: hidden;
 	transition: height 1s;
-	background: var(--myLightPurple);
+	background: var(--myDarkGreen);
+	color:white;
 
 }
 
+.aboutClass {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	justify-content: center;
+	margin: 20px auto;
+	max-width: 70vw;
+	font-family: "Roboto";
+	text-align: justify;
+}
 
+.aboutClass q {
+	text-align: center;
+	text-indent: 0;
+}
+
+.aboutClass img {
+	border-radius: 80px;
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	object-position: bottom;
+	align-self: center;
+}
+
+.aboutClass p {
+	align-self: flex-start;
+	padding: 15px 0;
+	text-indent: 30px;
+}
+
+
+footer {
+	text-align: center;
+	background: var(--myDarkGreen);
+	padding: 40px;
+	font-size: 1.5em;
+	text-align: left;
+	font-variant: small-caps;
+	color: whitesmoke;
+}
+
+footer span {
+	display: inline-block;
+	padding: 10px;
+	font-family: "Font Awesome 5 Brands Regular";
+
+}
+
+footer a {
+	text-decoration: none;
+	color: inherit;
+}
+
+footer span:hover {
+	transform: scale(1.3);
+	transition: 1s;
+}
 /*ANIMATIONS*/
 @keyframes pulsingLight {
-	0%   { opacity: 0.6;}
-	50%  { opacity: 1.0;}
-	100% { opacity: 0.6;}
+	0%   { color: white;}
+	50%  { color: var(--myTurquois);}
+	100% { color: white;}
 }
 
 /*HIDE SCROLL BARS*/
@@ -241,43 +366,33 @@ table {
 
 
 
-  .arucas, .sanbartolomedetirajana, .santaluciadetirajana {
+ .municipalityClass, .arucas, .sanBartolomeDeTirajana, .santaLuciaDeTirajana {
 	display: none;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 500px) {
 	.mainWrapper {
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;
-		width: 90vw;
+	}
+
+	.hikeContainer {
+		align-self: flex-start;
+
 	}
 
 	.hikeContainer, .imageGallery, .imageGallery img {
-		width: 40vw;	
-		max-height: 400px;
-	}
-
-	
-	nav {
-		flex-basis: 100%;
-
+		width: 35vw;		
 	}
 }
 
-
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 1400px) {
 	.mainWrapper {
 		flex-direction: row;
 		flex-wrap: wrap;
-		/* justify-content: flex-start; */
-		width: 100vw;
 	}
 	.hikeContainer, .imageGallery, .imageGallery img {
-		width: 20vw;		
+		width: 25vw;		
 		/* align-items: stretch; */
 	}
-	nav {
-		flex: 0 0 100%;
-
 }

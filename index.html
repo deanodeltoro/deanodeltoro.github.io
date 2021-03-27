@@ -6,25 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="master.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">    
+
 </head>
 
 <body>
-    <div class="mainWrapper">
+    
+      <head>
         <nav>
             <div id="logo">
+               <span class="spanIcon">&#63228;</span><br>
                 <span>the adventures of</span><br>
-                <p>deano del toro</p>
+                <p>deano<span>del</span>toro</p>
+                
             </div>
-            <select id="areas" onchange="myFunction()" class="areas hideScrollBars">
-			   <option>choose area</option>
-               <option>san bartolome de tirajana</option>
-               <option> santa lucia de tirajana</option>
-               <option>arucas</option>
-			   <option>ingenio</option>
-			</select>
-            <h1>WE'RE REVAMPING THIS SITE! BEAR WITH</h1>
-        </nav>
+            <hr>
+            <ul>
+               <li><a href="#about">about me</a></li>
+               <li><a href="#caminoDeSantiago">Camino de Santiago</a></li>
+               <li><a href="#theContact">contact</a></li>
+            </ul>
+         </nav>
+
+
+
+      </head>
+      <main>
+         <div class="aboutClass">
+            <h2 id="myAdventures">my adventures</h2>
+            
+              <q>Follow my adventures exploring this paradise island.</q>
+            
+
+         <select id="areas" onchange="myFunction()" class="areas">            
+         <option>Choose Area</option>
+            <option value="all">Show All</option>
+            <option value="sanBartolomeDeTirajana">San Bartolomé de Tirajana</option>
+            <option value="santaLuciaDeTirajana"> Santa Lucía de Tirajana</option>
+            <option value="arucas">Arucas</option>
+            <option value="ingenio">Ingenio</option>
+         </select>
+         </div>
+         <div class="municipalityClass sanBartolomeDeTirajana">
+            <img src="./img/sanBartolomeDeTirajana.png">
+            <h3>San Bartolomé de Tirajana</h3>
+            <span>27°55′32″N 15°34′21″O</span>
+         </div>
+         <div class="municipalityClass santaLuciaDeTirajana">
+            <img src="./img/santaLuciaDeTirajana.png">
+            <h3>Santa Lucía de Tirajana</h3>
+            <span>27°54′44″N 15°32′26″O</span>
+         </div>
+         <div class="municipalityClass arucas">
+            <img src="./img/arucas.png">
+            <h3>Arucas</h3>
+            <span>28°07′06″N 15°31′24″O</span>
+         </div>
+         <div class="municipalityClass ingenio">
+            <img src="./img/ingenio.png">
+            <h3>Ingenio</h3>
+            <span>27°55′17″N 15°25′57″O</span>
+         </div>
+
+
+         <div class="mainWrapper">
+
+         
         <div class="hikeContainer arucas">
             <div class="imageGallery hideScrollBars">
                 <img alt="Presa del Pinto" src="./img/pinto/pinto_4.jpeg">
@@ -76,7 +124,7 @@
             <button onclick="toggleInfo()">&#61543;</button	>
          </div>
 
-         <div class="hikeContainer santaluciadetirajana">
+         <div class="hikeContainer santaLuciaDeTirajana">
             <div class="imageGallery hideScrollBars">
                <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_11.jpeg">
 			   <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_1.jpeg" loading="lazy" >
@@ -137,7 +185,7 @@
             <button onclick="toggleInfo()">&#61543;</button	>
          </div>
 
-         <div class="hikeContainer sanbartolomedetirajana">
+         <div class="hikeContainer sanBartolomeDeTirajana">
             <div class="imageGallery hideScrollBars">
                <img alt= "Barranco de Berriel" src="./img/berriel/berriel_1.jpeg">
 			   <img alt= "Barranco de Berriel" src="./img/berriel/berriel_2.jpeg" loading="lazy">
@@ -207,7 +255,7 @@
             <button onclick="toggleInfo()">&#61543;</button	>
          </div>		 
 
-         <div class="hikeContainer sanbartolomedetirajana">
+         <div class="hikeContainer sanBartolomeDeTirajana">
             <div class="imageGallery hideScrollBars">
                <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_21.jpeg">
 			   <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_2.jpeg" loading="lazy">
@@ -278,9 +326,55 @@
                </p>
             </div>
             <button onclick="toggleInfo()">&#61543;</button	>
-         </div>		 		 
+         </div>	
 
       </div>
+         <div class="aboutClass">
+            <img alt="Picture of Me" src="./img/jacobeo_2021.png">
+            <h2 id="caminoDeSantiago">camino de santiago</h2>
+            <p>
+               *** updates to follow! ***      
+            </p>
+         </div>
+
+ 
+         
+         <div class="aboutClass">
+            <img alt="Picture of Me" src="./img/mimbre/mimbre_13.jpeg">
+            <h2 id="about">about me</h2>
+            <p>
+               My name is Dean and I want to share my Island adventures with you all.
+               Originally from the UK but now living on the beautiful Island of Gran Canaria off the Northwest coast of Africa.
+               I moved to the island Feb 2017 and it was the best decision of my life. I have a passion for adventure and love to explore in my free time. The best thing is to jump into your car head for somewhere new and see what you find. This is how I’ve found many of this islands secrets.
+               I decided to start this blog after several friends suggested I start one after seeing the pictures I had taken during my days out exploring.
+            </p>
+         </div>
+
+         <div class="aboutClass">
+            <img alt="Picture of Me" src="./img/gran_canaria.png">
+            <h2>gran canaria</h2>
+            <p>
+               Gran Canaria is a small island located in the Atlantic
+               Ocean and is approximately 150 kilometres off the northwestern
+               coast of Africa. With an area of 1,560 km2 (602 sq. mi) and an 
+               altitude of 1,956 m (6,417 ft) at Morro de la Agujereada, Gran 
+               Canaria is the third largest island of the archipelago in both 
+               area and altitude.               
+            </p>
+            <a class="buttonClass" href="https://en.wikipedia.org/wiki/Gran_Canaria" target="_blank">read more</a>
+         </div>
+      </main>
+    
+
+    <footer id="theContact">
+      <p>If you have any questions or want to know more about a particular place drop me a message on the below.</p>
+      <br>
+      <a href="https://www.facebook.com/dean.carter.3152" target="_blank"><span>&#62366;</span> dean.carter.3152</a>
+      <br>
+      <a href="https://www.instagram.com/dcgc79" target="_blank"><span>&#61805;</span>@dcgc79</a>
+   </footer>
+   
       <script src="functions.js"></script>
+      
    </body>
 </html>
