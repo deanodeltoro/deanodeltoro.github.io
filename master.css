@@ -116,8 +116,12 @@ select {
 
 }
 
+.municipalityClass h3 {
+	text-transform: uppercase;
+}
+
 .municipalityClass img {
-	width: 80px;
+	width: 100px;
 }
 
 .mainWrapper {
@@ -170,7 +174,7 @@ nav {
 	border-radius: 5px;
 	box-shadow: -5px 5px 10px 3px gray;
 	margin: 0 0 15px 0;
-	/* background: whitesmoke; */
+	background: whitesmoke;
 
 }
 
@@ -181,6 +185,7 @@ nav {
 	scroll-snap-type: x mandatory;
 	-webkit-overflow-scrolling: touch; 
 	gap: 10px;
+	border-radius: 5px 5px 0 0;
 	background: whitesmoke;
 }
 
@@ -206,6 +211,7 @@ table {
 	text-align: justify;
 	padding: 15px;
 	font-family: 'Roboto';
+	font-size: 0.8em;
 }
 .hikeInfo p::before {
 	content: "BIO : ";
@@ -308,8 +314,8 @@ table {
 
 .aboutClass img {
 	border-radius: 80px;
-	width: 80px;
-	height: 80px;
+	width: 100px;
+	height: 100px;
 	object-fit: cover;
 	object-position: bottom;
 	align-self: center;
@@ -369,7 +375,8 @@ footer span:hover {
 
 
 
- .municipalityClass, .arucas, .sanBartolomeDeTirajana, .santaLuciaDeTirajana {
+ .municipalityClass, .arucas, .sanBartolomeDeTirajana, .santaLuciaDeTirajana,
+ .ingenio, .moya {
 	display: none;
 }
 
