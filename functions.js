@@ -21,23 +21,28 @@ function myFunction() {
 	var area = document.getElementById("areas").value;
 
 	if (area == "all") {
+		for (let el of document.querySelectorAll('.municipalityClass')) 
+		el.style.display = 'none';
+
 		for (let el of document.querySelectorAll('.hikeContainer')) 
+		el.style.display = 'flex';
+
+		for (let el of document.querySelectorAll('.municipalityClass' + ".granCanaria" )) 
 		el.style.display = 'flex';
 	}
 	
 	else {
-	for (let el of document.querySelectorAll('.hikeContainer')) 
-	el.style.display = 'none';
+		for (let el of document.querySelectorAll('.hikeContainer')) 
+		el.style.display = 'none';
 
-	for (let el of document.querySelectorAll('.municipalityClass')) 
-	el.style.display = 'none';
+		for (let el of document.querySelectorAll('.municipalityClass')) 
+		el.style.display = 'none';
 
-	for (let el of document.querySelectorAll('.hikeContainer' + "."+ area))
-	el.style.display = 'flex';
+		for (let el of document.querySelectorAll('.hikeContainer' + "."+ area))
+		el.style.display = 'flex';
 	
-
-	for (let el of document.querySelectorAll('.municipalityClass' + "."+ area))
-	el.style.display = 'flex';
+		for (let el of document.querySelectorAll('.municipalityClass' + "."+ area))
+		el.style.display = 'flex';
 	}
 }
 
