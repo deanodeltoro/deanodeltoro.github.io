@@ -375,8 +375,17 @@ footer span:hover {
 
 
 
- .municipalityClass, .arucas, .sanBartolomeDeTirajana, .santaLuciaDeTirajana,
- .ingenio, .moya {
+.municipalityClass,
+.arucas, 
+.sanBartolomeDeTirajana, 
+.santaLuciaDeTirajana,
+.ingenio,
+.tejeda,
+.moya,
+.firgas,
+.agaete,
+.laAldeaDeSanNicolas,
+.aguimes {
 	display: none;
 }
 

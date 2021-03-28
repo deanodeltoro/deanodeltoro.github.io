@@ -1,871 +1,1837 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>The Adventures of Deano del Toro</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="stylesheet" type="text/css" href="master.css" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
-   </head>
-   <body>
-      <header>
-         <nav>
-            <div id="logo">
-               <span class="spanIcon">&#63228;</span><br>
-               <span>the adventures of</span><br>
-               <p>deano<span>del</span>toro</p>
+    <head>
+        <title>The Adventures of Deano del Toro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="master.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="logo">
+                    <span class="spanIcon">&#63228;</span><br>
+                    <span>the adventures of</span><br>
+                    <p>deano<span>del</span>toro</p>
+                </div>
+                <hr>
+                <ul>
+                    <li><a href="#about">about me</a></li>
+                    <li><a href="#caminoDeSantiago">Camino de Santiago</a></li>
+                    <li><a href="#theContact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="aboutClass">
+                <h2 id="myAdventures">my adventures</h2>
+                <q>Follow my adventures exploring this paradise island.</q>
+                <select id="areas" onchange="myFunction()" class="areas">
+                    <option>Choose Area</option>
+                    <option value="all">Show All</option>
+                    <option value="agaete">agaete</option>
+                    <option value="aguimes">agüimes</option>
+                    <option value="laAldeaDeSanNicolas">la aldea de san nicolás</option>
+                    <option value="arucas">Arucas</option>
+                    <option value="firgas">firgas</option>
+                    <option value="ingenio">Ingenio</option>
+                    <option value="moya">moya</option>
+                    <option value="sanBartolomeDeTirajana">San Bartolomé de Tirajana</option>
+                    <option value="santaLuciaDeTirajana"> Santa Lucía de Tirajana</option>
+                    <option value="tejeda">tejeda</option>
+                </select>
             </div>
-            <hr>
-            <ul>
-               <li><a href="#about">about me</a></li>
-               <li><a href="#caminoDeSantiago">Camino de Santiago</a></li>
-               <li><a href="#theContact">contact</a></li>
-            </ul>
-         </nav>
-      </header>
-      <main>
-         <div class="aboutClass">
-            <h2 id="myAdventures">my adventures</h2>
-            <q>Follow my adventures exploring this paradise island.</q>
-            <select id="areas" onchange="myFunction()" class="areas">
-               <option>Choose Area</option>
-               <option value="all">Show All</option>
-               <option value="sanBartolomeDeTirajana">San Bartolomé de Tirajana</option>
-               <option value="santaLuciaDeTirajana"> Santa Lucía de Tirajana</option>
-               <option value="arucas">Arucas</option>
-               <option value="ingenio">Ingenio</option>
-               <option value="tejeda">tejeda</option>
-               <option value="moya">moya</option>
-            </select>
-         </div>
-         <div class="municipalityClass sanBartolomeDeTirajana">
-            <img alt="Location San Bartolomé de Tirajana" src="./img/sanBartolomeDeTirajana.png">
-            <h3>San Bartolomé de Tirajana</h3>
-            <span>27°55′32″N 15°34′21″O</span>
-         </div>
-         <div class="municipalityClass santaLuciaDeTirajana">
-            <img  alt="Location Santa Lucía de Tirajana"  src="./img/santaLuciaDeTirajana.png">
-            <h3>Santa Lucía de Tirajana</h3>
-            <span>27°54′44″N 15°32′26″O</span>
-         </div>
-         <div class="municipalityClass arucas">
-            <img  alt="Location Arucas" src="./img/arucas.png">
-            <h3>Arucas</h3>
-            <span>28°07′06″N 15°31′24″O</span>
-         </div>
-         <div class="municipalityClass ingenio">
-            <img  alt="Ingenio"  src="./img/ingenio.png">
-            <h3>Ingenio</h3>
-            <span>27°55′17″N 15°25′57″O</span>
-         </div>
-         <div class="municipalityClass tejeda">
-            <img  alt="tejeda"  src="./img/tejeda.png">
-            <h3>Tejeda</h3>
-            <span>27°59′51″N 15°36′50″O</span>
-         </div>
-         <div class="municipalityClass moya">
-            <img  alt="moya"  src="./img/moya.png">
-            <h3>moya</h3>
-            <span>28°06′39″N 15°35′00″O</span>
-         </div>         
-
-         <div class="mainWrapper">
-            <div class="hikeContainer arucas">
-               <div class="imageGallery hideScrollBars">
-                  <img alt="Presa del Pinto" src="./img/pinto/pinto_4.jpeg">
-                  <img alt="Presa del Pinto" src="./img/pinto/pinto_1.jpeg" loading="lazy">
-                  <img alt="Presa del Pinto" src="./img/pinto/pinto_2.jpeg" loading="lazy">
-                  <img alt="Presa del Pinto" src="./img/pinto/pinto_3.jpeg" loading="lazy">
-                  <img alt="Presa del Pinto" src="./img/pinto/pinto_5.jpeg" loading="lazy">
-                  <img alt="Presa del Pinto" src="./img/pinto/pinto_6.jpeg" loading="lazy">
-                  <img alt="Presa del Pinto" src="./img/pinto/pinto_7.jpeg" loading="lazy">
-                  <img alt="Presa del Pinto" src="./img/pinto/pinto_8.jpeg" loading="lazy">
-                  <img alt="Presa del Pinto" src="./img/pinto/pinto_9.jpeg" loading="lazy">
-                  <img alt="Presa del Pinto" src="./img/pinto/pinto_10.jpeg" loading="lazy">
-                  <img alt="Presa del Pinto" src="./img/pinto/pinto_11.jpeg" loading="lazy">
-               </div>
-               <table>
-                  <thead>
-                     <tr>
-                        <th colspan="3">
-                           presa del pinto
-                        </th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td colspan="3">
-                           arucas
-                        </td>
-                     </tr>
-                  </tbody>
-                  <tfoot>
-                     <tr>
-                        <td class="hikeLength">
-                           --
-                        </td>
-                        <td class="hikeTime">
-                           1
-                        </td>
-                        <td class="hikeLog">
-                           <time datetime="2021-02-14">16-01-2021</time>
-                        </td>
-                     </tr>
-                  </tfoot>
-               </table>
-               <div class="hikeInfo hideScrollBars">
-                  <p>
-                     This reservoir is located in the north of the island and has a beautiful walk (approximately 1 h) around it taking you along a footpath into a wooded area. Plenty of trees and plants to make the walk that little bit more special. You can cross over the dam at the other end and make your way down along a footpath. To access the presa take the GC-300 and you will see the turning at <em>Barranco de los Bañaderos</em>.
-                  </p>
-               </div>
-               <button onclick="toggleInfo()">&#61543;</button	>
+            <div class="municipalityClass sanBartolomeDeTirajana">
+                <img alt="Location San Bartolomé de Tirajana" src="./img/sanBartolomeDeTirajana.png">
+                <h3>San Bartolomé de Tirajana</h3>
+                <span>27°55′32″N 15°34′21″O</span>
             </div>
-            <div class="hikeContainer santaLuciaDeTirajana">
-               <div class="imageGallery hideScrollBars">
-                  <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_11.jpeg">
-                  <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_1.jpeg" loading="lazy" >
-                  <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_2.jpeg" loading="lazy" >
-                  <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_3.jpeg" loading="lazy" >
-                  <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_4.jpeg" loading="lazy" >
-                  <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_5.jpeg" loading="lazy" >
-                  <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_6.jpeg" loading="lazy" >
-                  <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_7.jpeg" loading="lazy" >
-                  <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_8.jpeg" loading="lazy" >
-                  <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_9.jpeg" loading="lazy" >
-                  <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_10.jpeg" loading="lazy" >
-                  <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_11.jpeg" loading="lazy" >
-               </div>
-               <table>
-                  <thead>
-                     <tr>
-                        <th colspan="3">
-                           Presa de Tirajana - La Sorrueda
-                        </th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td colspan="3">
-                           santa lucía de tirajana 
-                        </td>
-                     </tr>
-                  </tbody>
-                  <tfoot>
-                     <tr>
-                        <td class="hikeLength">
-                           --
-                        </td>
-                        <td class="hikeTime">
-                           1
-                        </td>
-                        <td class="hikeLog">
-                           <time datetime="2021-01-21">18-01-2021</time>
-                        </td>
-                     </tr>
-                  </tfoot>
-               </table>
-               <div class="hikeInfo hideScrollBars">
-                  <p>
-                     Located in the Santa Lucia region this presa sits in 
-                     <em>Barranco de Tirajana</em>.
-                     Take the winding road down from <em>Mirador de la Sorrueda</em>
-                     (where I parked my car) into the valley bottom.
-                     From here you can walk the track through <em>Barranco de Tirajana</em>. 
-                     There is a gravel road along the barranco which gives access to <em>fincas</em>
-                     and electrical sub stations. The walk  is surrounded by imposing cliff
-                     walls towering above you. Numerous caves and side valleys all leading into the
-                     ravine. The views are stunning and the walk is easy. Well worth a visit if you
-                     want an easy walk with dramatic scenery.					
-                  </p>
-               </div>
-               <button onclick="toggleInfo()">&#61543;</button	>
+            <div class="municipalityClass santaLuciaDeTirajana">
+                <img  alt="Location Santa Lucía de Tirajana"  src="./img/santaLuciaDeTirajana.png">
+                <h3>Santa Lucía de Tirajana</h3>
+                <span>27°54′44″N 15°32′26″O</span>
             </div>
-            <div class="hikeContainer sanBartolomeDeTirajana">
-               <div class="imageGallery hideScrollBars">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_1.jpeg">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_2.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_3.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_4.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_5.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_6.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_7.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_8.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_9.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_10.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_11.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_12.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_13.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_14.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_15.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_16.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_17.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_18.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_19.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_20.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_21.jpeg" loading="lazy">
-                  <img alt= "Barranco de Berriel" src="./img/berriel/berriel_22.jpeg" loading="lazy">
-               </div>
-               <table>
-                  <thead>
-                     <tr>
-                        <th colspan="3">
-                           barranco de berriel
-                        </th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td colspan="3">
-                           san bartolomé de tirajana
-                        </td>
-                     </tr>
-                  </tbody>
-                  <tfoot>
-                     <tr>
-                        <td class="hikeLength">
-                           --
-                        </td>
-                        <td class="hikeTime">
-                           1
-                        </td>
-                        <td class="hikeLog">
-                           <time datetime="2021-01-20">20-01-2021</time>
-                        </td>
-                     </tr>
-                  </tfoot>
-               </table>
-               <div class="hikeInfo hideScrollBars">
-                  <p>
-                     Located in the south of the island starting Bahia Feliz. 
-                     This Barranco is approx 3.4km long with easy walking and
-                     after the recent rains has many beautiful pools and waterfalls
-                     to take a dip in. The views are stunning and the path to the
-                     first pools is easy. To the bigger pools and waterfalls deeper
-                     in the valley you do need to do a little climbing up some
-                     steep paths however the views and photo opportunities are
-                     certainly worth it. Access to the parking area is on the waste 
-                     ground opposite Garbos on the GC-500.					
-                  </p>
-               </div>
-               <button onclick="toggleInfo()">&#61543;</button	>
+            <div class="municipalityClass arucas">
+                <img  alt="Location Arucas" src="./img/arucas.png">
+                <h3>Arucas</h3>
+                <span>28°07′06″N 15°31′24″O</span>
             </div>
-            <div class="hikeContainer sanBartolomeDeTirajana">
-               <div class="imageGallery hideScrollBars">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_21.jpeg">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_2.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_3.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_4.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_5.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_6.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_7.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_8.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_9.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_10.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_11.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_12.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_13.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_14.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_15.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_16.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_17.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_18.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_19.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_20.jpeg" loading="lazy">
-                  <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_21.jpeg" loading="lazy">
-               </div>
-               <table>
-                  <thead>
-                     <tr>
-                        <th colspan="3">
-                           Ayagaures to Tunte
-                        </th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td colspan="3">
-                           san bartolomé de tirajana
-                        </td>
-                     </tr>
-                  </tbody>
-                  <tfoot>
-                     <tr>
-                        <td class="hikeLength">
-                           --
-                        </td>
-                        <td class="hikeTime">
-                           1
-                        </td>
-                        <td class="hikeLog">
-                           <time datetime="2021-01-22">22-01-2021</time>
-                        </td>
-                     </tr>
-                  </tfoot>
-               </table>
-               <div class="hikeInfo hideScrollBars">
-                  <p>
-                     This day started with a little stroll and ended up on a
-                     full scale 8hr hike (including breaks and lunch) to Tunte 
-                     and back 27km round trip. The route takes you up through the
-                     Barranco crossing over the peak and then back down the other 
-                     side arriving into Tunte. This is an absolutely stunning route,
-                     the views are breathtaking however the initial part of the walk
-                     is difficult and gains alot of altitude. The silence of nature
-                     and the smell of the pine trees make this one a good mood lifter.
-                     Make sure you are fully prepared with enough water and snacks. 
-                     The route is accessed via Presa de Gambuesa where you park the car. 
-                     Cross over the dam and follow the winding road which takes you upto
-                     the trail to Tunte. This is one of my favourites as the views need
-                     to be seen to be believed.					
-                  </p>
-               </div>
-               <button onclick="toggleInfo()">&#61543;</button	>
+            <div class="municipalityClass ingenio">
+                <img  alt="Ingenio"  src="./img/ingenio.png">
+                <h3>Ingenio</h3>
+                <span>27°55′17″N 15°25′57″O</span>
             </div>
-            <div class="hikeContainer sanBartolomeDeTirajana">
-               <div class="imageGallery hideScrollBars">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_8.jpeg">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_1.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_2.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_3.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_4.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_5.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_6.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_7.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_8.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_9.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_10.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_11.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_12.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_13.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_14.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_15.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_16.jpeg" loading="lazy">
-                  <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_17.jpeg" loading="lazy">
-                  
-               </div>
-               <table>
-                  <thead>
-                     <tr>
-                        <th colspan="3">
-                           barranco del toro
-                        </th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td colspan="3">
-                           san bartolomé de tirajana
-                        </td>
-                     </tr>
-                  </tbody>
-                  <tfoot>
-                     <tr>
-                        <td class="hikeLength">
-                           --
-                        </td>
-                        <td class="hikeTime">
-                           --
-                        </td>
-                        <td class="hikeLog">
-                           <time datetime="2021-01-24">24-01-2021</time>
-                        </td>
-                     </tr>
-                  </tfoot>
-               </table>
-               <div class="hikeInfo hideScrollBars">
-                  <p>
-                     Barranco del Toro is a deep rugged valley in the south of 
-                     the island near San Agustín. There are 2 ways to see this
-                     valley. You can either walk from its very start which is first
-                     located by walking through Barranco de los Guinchos or you can
-                     take the high path along the peak of Barranco de Veguas and come
-                     down into Barranco del Toro at the other end. The first option
-                     involves a more difficult hike and scrambling up steep waterfalls.
-                     The second route is the one I chose at it was a nice steady climb 
-                     at the valley tops with great views. Once at the end of the trail 
-                     the path does become alot more difficult as you descend down into
-                     Barranco del Toro where the pools and waterfalls are located. The
-                     views and rugged terrain are stunning and the route takes you through
-                     a goat farm where you walk amongst the flock and can even buy the cheese
-                     they make on the farm. The route I took is accessed to the left of the
-                     Gloria Palace Hotel where the staff car park is. Walk to the top of the
-                     car park and you will see the tunnel under the GC-1 which is the start 
-                     of the route.					
-                  </p>
-               </div>
-               <button onclick="toggleInfo()">&#61543;</button	>
+            <div class="municipalityClass tejeda">
+                <img  alt="tejeda"  src="./img/tejeda.png">
+                <h3>Tejeda</h3>
+                <span>27°59′51″N 15°36′50″O</span>
             </div>
-            <div class="hikeContainer sanBartolomeDeTirajana">
-               <div class="imageGallery hideScrollBars">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_23.jpeg">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_1.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_2.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_3.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_4.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_5.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_6.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_7.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_8.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_9.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_10.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_11.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_12.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_13.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_14.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_15.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_16.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_17.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_18.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_19.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_20.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_21.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_22.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_23.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_24.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_25.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_26.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_27.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_28.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_29.jpeg" loading="lazy">
-                  
-               </div>
-               <table>
-                  <thead>
-                     <tr>
-                        <th colspan="3">
-                           Llanos de la Pez (circular route)
-                        </th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td colspan="3">
-                           san bartolomé de tirajana
-                        </td>
-                     </tr>
-                  </tbody>
-                  <tfoot>
-                     <tr>
-                        <td class="hikeLength">
-                           --
-                        </td>
-                        <td class="hikeTime">
-                           --
-                        </td>
-                        <td class="hikeLog">
-                           <time datetime="2021-02-14">25-01-2021</time>
-                        </td>
-                     </tr>
-                  </tfoot>
-               </table>
-               <div class="hikeInfo hideScrollBars">
-                  <p>
-                     Llanos de la Pez is a beautiful Nature Reserve located in the center of the island. 
-                     Its a beautiful spot for camping or for picnics. The area is also the start of many 
-                     hiking trails. The one I chose today was the circular route.
-                     The route takes you through the pine forest, across rocky outcrops and up to the peaks
-                     where you get some amazing views of Roque Nublo. You can see across the Island and on 
-                     clear days you get beautiful views of Tenerife.                     
-                     About half way through the trail when you get to the tops the trails split into many 
-                     different routes.
-                  </p>
-               </div>
-               <button onclick="toggleInfo()">&#61543;</button	>
-            </div>    
-            <div class="hikeContainer ingenio">
-               <div class="imageGallery hideScrollBars">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_25.jpeg">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_1.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_2.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_3.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_4.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_5.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_6.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_7.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_8.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_9.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_10.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_11.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_12.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_13.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_14.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_15.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_16.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_17.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_18.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_19.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_20.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_21.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_22.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_23.jpeg" loading="lazy">.
-                  <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_24.jpeg" loading="lazy">
-
-    
-               </div>
-               <table>
-                  <thead>
-                     <tr>
-                        <th colspan="3">
-                           barranco de guayadeque
-                        </th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td colspan="3">
-                           ingenio
-                        </td>
-                     </tr>
-                  </tbody>
-                  <tfoot>
-                     <tr>
-                        <td class="hikeLength">
-                           --
-                        </td>
-                        <td class="hikeTime">
-                           --
-                        </td>
-                        <td class="hikeLog">
-                           <time datetime="2021-01-28">28-01-2021</time>
-                        </td>
-                     </tr>
-                  </tfoot>
-               </table>
-               <div class="hikeInfo hideScrollBars">
-                  <p>
-                     This beautiful valley is one of my favourites and close to my home. 
-                     I took a hike during the Almond Blossom season (end Jan beginning Feb) 
-                     and all I can say is wow. The route starts at the last restaurant on 
-                     the main access road and takes you up into the heart of the valley. 
-                     Passing through small fincas and old abandoned buildings upto the Caldera. 
-                     You can also continue on upto Pico de las Nieves (this route will be a future update).
-                     The valley itself is stunning and peaceful, well worth a visit.
-                  </p>
-               </div>
-               <button onclick="toggleInfo()">&#61543;</button	>
-            </div> 
-            <div class="hikeContainer moya">
-               <div class="imageGallery hideScrollBars">
-                  <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_14.jpeg">
-                  <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_1.jpeg" loading="lazy">
-                  <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_2.jpeg" loading="lazy">
-                  <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_3.jpeg" loading="lazy">
-                  <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_4.jpeg" loading="lazy">
-                  <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_5.jpeg" loading="lazy">
-                  <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_6.jpeg" loading="lazy">
-                  <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_7.jpeg" loading="lazy">
-                  <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_8.jpeg" loading="lazy">
-                  <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_9.jpeg" loading="lazy">
-                  <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_10.jpeg" loading="lazy">
-                  <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_11.jpeg" loading="lazy">
-                  <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_12.jpeg" loading="lazy">
-                  <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_13.jpeg" loading="lazy">
-          
-    
-               </div>
-               <table>
-                  <thead>
-                     <tr>
-                        <th colspan="3">
-                           barranco oscuro
-                        </th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td colspan="3">
-                           moya
-                        </td>
-                     </tr>
-                  </tbody>
-                  <tfoot>
-                     <tr>
-                        <td class="hikeLength">
-                           --
-                        </td>
-                        <td class="hikeTime">
-                           --
-                        </td>
-                        <td class="hikeLog">
-                           <time datetime="2021-01-29">29-01-2021</time>
-                        </td>
-                     </tr>
-                  </tfoot>
-               </table>
-               <div class="hikeInfo hideScrollBars">
-                  <p>
-                     This walk was a true hidden gem. Browsing through google maps 
-                     I spotted this Barranco and thought id go have a look. Located 
-                     in the north of the island so a little drive to get to it but it
-                     was worth it. Parked the car on the side of a back road and saw
-                     a sign post for the start of the trail. After about 5 mins o
-                     the trail the views opened up to a breathtaking view down into 
-                     the valley which was dotted with Fincas full with fruit trees.
-                     The trail winds its way down into the valley and onto the main
-                     road through the bottom. The walk is beautiful and covered with 
-                     flowers and fruit trees. there is another trail half way up the 
-                     road which then climbs up the other side. we followed this and 
-                     again were rewarded with amazing views. The path up is a little
-                     steep in places but well worth it.
-                  </p>
-               </div>
-               <button onclick="toggleInfo()">&#61543;</button	>
-            </div>             
-            <div class="hikeContainer sanBartolomeDeTirajana">
-               <div class="imageGallery hideScrollBars">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_1.jpeg">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_2.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_3.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_1.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_2.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_2.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_4.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_2.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_5.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_3.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_6.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_4.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_7.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_5.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_8.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_6.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_9.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_7.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_10.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_8.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_11.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_9.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_12.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_10.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_13.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_11.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_14.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_12.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_15.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_2.jpeg" loading="lazy">
-                  <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_16.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_2.jpeg" loading="lazy">
-               </div>
-               <table>
-                  <thead>
-                     <tr>
-                        <th colspan="3">
-                           Llano de la Pez - Ventana del Nublo
-                        </th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td colspan="3">
-                           san bartolomé de tirajana
-                        </td>
-                     </tr>
-                  </tbody>
-                  <tfoot>
-                     <tr>
-                        <td class="hikeLength">
-                           --
-                        </td>
-                        <td class="hikeTime">
-                           --
-                        </td>
-                        <td class="hikeLog">
-                           <time datetime="2021-01-31">31-01-2021</time>
-                        </td>
-                     </tr>
-                  </tfoot>
-               </table>
-               <div class="hikeInfo hideScrollBars">
-                  <p>
-                     Llanos de la Pez is a beautiful area up in the
-                     mountains and the start of many different trails. 
-                     well worth a visit if you want to explore. I chose 
-                     this time to do the circular route and head upto 
-                     Ventana del Nublo. The views are breathtaking and 
-                     have to be seen to be believed.
-                  </p>
-               </div>
-               <button onclick="toggleInfo()">&#61543;</button	>
-            </div>    
-            <div class="hikeContainer tejeda">
-               <div class="imageGallery hideScrollBars">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_4.jpeg">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_1.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_2.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_3.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_4.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_5.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_6.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_7.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_8.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_9.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_10.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_11.jpeg" loading="lazy">                  
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_12.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_13.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_14.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_15.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_16.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_17.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_18.jpeg" loading="lazy">
-                  <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_19.jpeg" loading="lazy">
-               </div>
-               <table>
-                  <thead>
-                     <tr>
-                        <th colspan="3">
-                           Presa de Los Hornos - Llanos de la Pez
-                        </th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td colspan="3">
-                           tejeda
-                        </td>
-                     </tr>
-                  </tbody>
-                  <tfoot>
-                     <tr>
-                        <td class="hikeLength">
-                           --
-                        </td>
-                        <td class="hikeTime">
-                           --
-                        </td>
-                        <td class="hikeLog">
-                           <time datetime="2021-02-01">01-02-2021</time>
-                        </td>
-                     </tr>
-                  </tfoot>
-               </table>
-               <div class="hikeInfo hideScrollBars">
-                  <p>
-                     This is a very beautiful area of the Island 
-                     with many trails. This time I started at Mirador
-                     Presa de Los Hornos and took the trail across the Presa 
-                     and upto Llanos de la Pez. The views are stunning. You 
-                     can take in the the scents of the pine forrest and the views 
-                     of Roque Nublo, Roque Bentayga and across to Tenerife. This
-                     is also a great place if you want to take in a beautiful sunset.
-                  </p>
-               </div>
-               <button onclick="toggleInfo()">&#61543;</button	>
-            </div>  
-            <div class="hikeContainer ingenio">
-               <div class="imageGallery hideScrollBars">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_19.jpeg">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_1.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_2.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_3.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_4.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_5.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_6.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_7.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_8.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_9.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_10.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_11.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_12.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_13.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_14.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_15.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_16.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_17.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_18.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_20.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_21.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_22.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_23.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_24.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_25.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_26.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_27.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_28.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_29.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_30.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_31.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_32.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_33.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_34.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_35.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_36.jpeg" loading="lazy">
-                  <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_37.jpeg" loading="lazy">
-               </div>
-               <table>
-                  <thead>
-                     <tr>
-                        <th colspan="3">
-                           Barranco de Guayadeque - Pico de las Nieves
-                        </th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td colspan="3">
-                           ingenio
-                        </td>
-                     </tr>
-                  </tbody>
-                  <tfoot>
-                     <tr>
-                        <td class="hikeLength">
-                           --
-                        </td>
-                        <td class="hikeTime">
-                           --
-                        </td>
-                        <td class="hikeLog">
-                           <time datetime="2021-02-02">02-02-2021</time>
-                        </td>
-                     </tr>
-                  </tfoot>
-               </table>
-               <div class="hikeInfo hideScrollBars">
-                  <p>
-                     If you are up for a challenge and dont mind a long hike
-                     (28km round trip) then this route is for you. Starting in
-                     Barranco Guayadeque you make your way through this stunning
-                     valley and upto the start of the trail towards Pico de Las
-                     Nieves. The climb here takes its toll on the legs but the views
-                     are worth it. On the day I went the skies were clear and I could
-                     see across to Fuerteventura. The trail then splits off into other 
-                     trails however I continued upto Pico de Las Nieves. The views
-                     from the top are amazing and could see a clear view of Tenerife
-                     and La Gomera. On the return I took a different trail back which 
-                     stayed above Barranco Guayadeque and came down at the middle of the valley.
-                     Stunning views and lots of plants and flowers to enjoy along the way. One
-                     of my all time favourites.
-                  </p>
-               </div>
-               <button onclick="toggleInfo()">&#61543;</button	>
-            </div>                                        
-         </div>
-
-
-         <div class="aboutClass">
-            <img alt="Picture of Me" src="./img/jacobeo_2021.png">
-            <h2 id="caminoDeSantiago">camino de santiago</h2>
-            <p>
-               *** updates to follow! ***      
-            </p>
-         </div>
-         <div class="aboutClass">
-            <img alt="Picture of Me" src="./img/mimbre/mimbre_13.jpeg">
-            <h2 id="about">about me</h2>
-            <p>
-               My name is Dean and I want to share my Island adventures with you all.
-               Originally from the UK but now living on the beautiful Island of Gran Canaria off the Northwest coast of Africa.
-               I moved to the island Feb 2017 and it was the best decision of my life. I have a passion for adventure and love to explore in my free time. The best thing is to jump into your car head for somewhere new and see what you find. This is how I’ve found many of this islands secrets.
-               I decided to start this blog after several friends suggested I start one after seeing the pictures I had taken during my days out exploring.
-            </p>
-         </div>
-         <div class="aboutClass">
-            <img alt="Picture of Me" src="./img/gran_canaria.png">
-            <h2>gran canaria</h2>
-            <p>
-               Gran Canaria is a small island located in the Atlantic
-               Ocean and is approximately 150 kilometres off the northwestern
-               coast of Africa. With an area of 1,560 km2 (602 sq. mi) and an 
-               altitude of 1,956 m (6,417 ft) at Morro de la Agujereada, Gran 
-               Canaria is the third largest island of the archipelago in both 
-               area and altitude.               
-            </p>
-            <a class="buttonClass" href="https://en.wikipedia.org/wiki/Gran_Canaria" target="_blank">read more</a>
-         </div>
-      </main>
-      <footer id="theContact">
-         <p>If you have any questions or want to know more about a particular place drop me a message on the below.</p>
-         <br>
-         <a href="https://www.facebook.com/dean.carter.3152" target="_blank"><span>&#62366;</span> dean.carter.3152</a>
-         <br>
-         <a href="https://www.instagram.com/dcgc79" target="_blank"><span>&#61805;</span>@dcgc79</a>
-      </footer>
-      <script src="functions.js"></script>
-   </body>
+            <div class="municipalityClass moya">
+                <img  alt="moya"  src="./img/moya.png">
+                <h3>moya</h3>
+                <span>28°06′39″N 15°35′00″O</span>
+            </div>
+            <div class="municipalityClass firgas">
+                <img  alt="firgas"  src="./img/firgas.png">
+                <h3>firgas</h3>
+                <span>28°06′N 15°33′O</span>
+            </div>
+            <div class="municipalityClass agaete">
+                <img  alt="agaete"  src="./img/agaete.png">
+                <h3>agaete</h3>
+                <span>28°06′06″N 15°42′03″O</span>
+            </div>
+            <div class="municipalityClass laAldeaDeSanNicolas">
+                <img  alt="la aldea de san nicolás"  src="./img/laAldeaDeSanNicolas.png">
+                <h3>la aldea de san nicolás</h3>
+                <span>27°58′57″N 15°46′48″O</span>
+            </div>
+            <div class="municipalityClass aguimes">
+                <img  alt="agüimes"  src="./img/aguimes.png">
+                <h3>agüimes</h3>
+                <span>27°53′00″N 15°26′00″O</span>
+            </div>
+            <div class="mainWrapper">
+                <div class="hikeContainer arucas">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt="Presa del Pinto" src="./img/pinto/pinto_4.jpeg">
+                        <img alt="Presa del Pinto" src="./img/pinto/pinto_1.jpeg" loading="lazy">
+                        <img alt="Presa del Pinto" src="./img/pinto/pinto_2.jpeg" loading="lazy">
+                        <img alt="Presa del Pinto" src="./img/pinto/pinto_3.jpeg" loading="lazy">
+                        <img alt="Presa del Pinto" src="./img/pinto/pinto_5.jpeg" loading="lazy">
+                        <img alt="Presa del Pinto" src="./img/pinto/pinto_6.jpeg" loading="lazy">
+                        <img alt="Presa del Pinto" src="./img/pinto/pinto_7.jpeg" loading="lazy">
+                        <img alt="Presa del Pinto" src="./img/pinto/pinto_8.jpeg" loading="lazy">
+                        <img alt="Presa del Pinto" src="./img/pinto/pinto_9.jpeg" loading="lazy">
+                        <img alt="Presa del Pinto" src="./img/pinto/pinto_10.jpeg" loading="lazy">
+                        <img alt="Presa del Pinto" src="./img/pinto/pinto_11.jpeg" loading="lazy">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    presa del pinto
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    arucas
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    1
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-02-14">16-01-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            This reservoir is located in the north of the island and has a beautiful walk (approximately 1 h) around it taking you along a footpath into a wooded area. Plenty of trees and plants to make the walk that little bit more special. You can cross over the dam at the other end and make your way down along a footpath. To access the presa take the GC-300 and you will see the turning at <em>Barranco de los Bañaderos</em>.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer santaLuciaDeTirajana">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_11.jpeg">
+                        <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_1.jpeg" loading="lazy" >
+                        <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_2.jpeg" loading="lazy" >
+                        <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_3.jpeg" loading="lazy" >
+                        <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_4.jpeg" loading="lazy" >
+                        <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_5.jpeg" loading="lazy" >
+                        <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_6.jpeg" loading="lazy" >
+                        <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_7.jpeg" loading="lazy" >
+                        <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_8.jpeg" loading="lazy" >
+                        <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_9.jpeg" loading="lazy" >
+                        <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_10.jpeg" loading="lazy" >
+                        <img alt= "Presa de Tirajana -  La Sorrueda" src="./img/tirajana/tirajana_11.jpeg" loading="lazy" >
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Presa de Tirajana - La Sorrueda
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    santa lucía de tirajana 
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    1
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-01-21">18-01-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            Located in the Santa Lucia region this presa sits in 
+                            <em>Barranco de Tirajana</em>.
+                            Take the winding road down from <em>Mirador de la Sorrueda</em>
+                            (where I parked my car) into the valley bottom.
+                            From here you can walk the track through <em>Barranco de Tirajana</em>. 
+                            There is a gravel road along the barranco which gives access to <em>fincas</em>
+                            and electrical sub stations. The walk  is surrounded by imposing cliff
+                            walls towering above you. Numerous caves and side valleys all leading into the
+                            ravine. The views are stunning and the walk is easy. Well worth a visit if you
+                            want an easy walk with dramatic scenery.					
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer sanBartolomeDeTirajana">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_1.jpeg">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_2.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_3.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_4.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_5.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_6.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_7.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_8.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_9.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_10.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_11.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_12.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_13.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_14.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_15.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_16.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_17.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_18.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_19.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_20.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_21.jpeg" loading="lazy">
+                        <img alt= "Barranco de Berriel" src="./img/berriel/berriel_22.jpeg" loading="lazy">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    barranco de berriel
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    san bartolomé de tirajana
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    1
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-01-20">20-01-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            Located in the south of the island starting Bahia Feliz. 
+                            This Barranco is approx 3.4km long with easy walking and
+                            after the recent rains has many beautiful pools and waterfalls
+                            to take a dip in. The views are stunning and the path to the
+                            first pools is easy. To the bigger pools and waterfalls deeper
+                            in the valley you do need to do a little climbing up some
+                            steep paths however the views and photo opportunities are
+                            certainly worth it. Access to the parking area is on the waste 
+                            ground opposite Garbos on the GC-500.					
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer sanBartolomeDeTirajana">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_21.jpeg">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_2.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_3.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_4.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_5.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_6.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_7.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_8.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_9.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_10.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_11.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_12.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_13.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_14.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_15.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_16.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_17.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_18.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_19.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_20.jpeg" loading="lazy">
+                        <img alt= "Ayagaures to Tunte" src="./img/ayagaures2tunte/ayagaures2tunte_21.jpeg" loading="lazy">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Ayagaures to Tunte
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    san bartolomé de tirajana
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    1
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-01-22">22-01-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            This day started with a little stroll and ended up on a
+                            full scale 8hr hike (including breaks and lunch) to Tunte 
+                            and back 27km round trip. The route takes you up through the
+                            Barranco crossing over the peak and then back down the other 
+                            side arriving into Tunte. This is an absolutely stunning route,
+                            the views are breathtaking however the initial part of the walk
+                            is difficult and gains alot of altitude. The silence of nature
+                            and the smell of the pine trees make this one a good mood lifter.
+                            Make sure you are fully prepared with enough water and snacks. 
+                            The route is accessed via Presa de Gambuesa where you park the car. 
+                            Cross over the dam and follow the winding road which takes you upto
+                            the trail to Tunte. This is one of my favourites as the views need
+                            to be seen to be believed.					
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer sanBartolomeDeTirajana">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_8.jpeg">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_1.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_2.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_3.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_4.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_5.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_6.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_7.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_8.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_9.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_10.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_11.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_12.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_13.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_14.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_15.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_16.jpeg" loading="lazy">
+                        <img alt= "Barranco del Toro" src="./img/bco_del_toro/bco_del_toro_17.jpeg" loading="lazy">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    barranco del toro
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    san bartolomé de tirajana
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-01-24">24-01-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            Barranco del Toro is a deep rugged valley in the south of 
+                            the island near San Agustín. There are 2 ways to see this
+                            valley. You can either walk from its very start which is first
+                            located by walking through Barranco de los Guinchos or you can
+                            take the high path along the peak of Barranco de Veguas and come
+                            down into Barranco del Toro at the other end. The first option
+                            involves a more difficult hike and scrambling up steep waterfalls.
+                            The second route is the one I chose at it was a nice steady climb 
+                            at the valley tops with great views. Once at the end of the trail 
+                            the path does become alot more difficult as you descend down into
+                            Barranco del Toro where the pools and waterfalls are located. The
+                            views and rugged terrain are stunning and the route takes you through
+                            a goat farm where you walk amongst the flock and can even buy the cheese
+                            they make on the farm. The route I took is accessed to the left of the
+                            Gloria Palace Hotel where the staff car park is. Walk to the top of the
+                            car park and you will see the tunnel under the GC-1 which is the start 
+                            of the route.					
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer sanBartolomeDeTirajana">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_23.jpeg">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_1.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_2.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_3.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_4.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_5.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_6.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_7.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_8.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_9.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_10.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_11.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_12.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_13.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_14.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_15.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_16.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_17.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_18.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_19.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_20.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_21.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_22.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_23.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_24.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_25.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_26.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_27.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_28.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez (circular route)" src="./img/llanos_circular/llanos_circular_29.jpeg" loading="lazy">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Llanos de la Pez (circular route)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    san bartolomé de tirajana
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-02-14">25-01-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            Llanos de la Pez is a beautiful Nature Reserve located in the center of the island. 
+                            Its a beautiful spot for camping or for picnics. The area is also the start of many 
+                            hiking trails. The one I chose today was the circular route.
+                            The route takes you through the pine forest, across rocky outcrops and up to the peaks
+                            where you get some amazing views of Roque Nublo. You can see across the Island and on 
+                            clear days you get beautiful views of Tenerife.                     
+                            About half way through the trail when you get to the tops the trails split into many 
+                            different routes.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer ingenio">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_25.jpeg">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_1.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_2.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_3.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_4.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_5.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_6.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_7.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_8.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_9.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_10.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_11.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_12.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_13.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_14.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_15.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_16.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_17.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_18.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_19.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_20.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_21.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_22.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_23.jpeg" loading="lazy">.
+                        <img alt= "Barranco de Guayadeque" src="./img/guayadeque/guayadeque_24.jpeg" loading="lazy">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    barranco de guayadeque
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    ingenio
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-01-28">28-01-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            This beautiful valley is one of my favourites and close to my home. 
+                            I took a hike during the Almond Blossom season (end Jan beginning Feb) 
+                            and all I can say is wow. The route starts at the last restaurant on 
+                            the main access road and takes you up into the heart of the valley. 
+                            Passing through small fincas and old abandoned buildings upto the Caldera. 
+                            You can also continue on upto Pico de las Nieves (this route will be a future update).
+                            The valley itself is stunning and peaceful, well worth a visit.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer moya">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_14.jpeg">
+                        <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_1.jpeg" loading="lazy">
+                        <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_2.jpeg" loading="lazy">
+                        <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_3.jpeg" loading="lazy">
+                        <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_4.jpeg" loading="lazy">
+                        <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_5.jpeg" loading="lazy">
+                        <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_6.jpeg" loading="lazy">
+                        <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_7.jpeg" loading="lazy">
+                        <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_8.jpeg" loading="lazy">
+                        <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_9.jpeg" loading="lazy">
+                        <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_10.jpeg" loading="lazy">
+                        <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_11.jpeg" loading="lazy">
+                        <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_12.jpeg" loading="lazy">
+                        <img alt= "Barranco Oscuro" src="./img/bco_oscuro/bco_oscuro_13.jpeg" loading="lazy">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    barranco oscuro
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    moya
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-01-29">29-01-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            This walk was a true hidden gem. Browsing through google maps 
+                            I spotted this Barranco and thought id go have a look. Located 
+                            in the north of the island so a little drive to get to it but it
+                            was worth it. Parked the car on the side of a back road and saw
+                            a sign post for the start of the trail. After about 5 mins o
+                            the trail the views opened up to a breathtaking view down into 
+                            the valley which was dotted with Fincas full with fruit trees.
+                            The trail winds its way down into the valley and onto the main
+                            road through the bottom. The walk is beautiful and covered with 
+                            flowers and fruit trees. there is another trail half way up the 
+                            road which then climbs up the other side. we followed this and 
+                            again were rewarded with amazing views. The path up is a little
+                            steep in places but well worth it.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer sanBartolomeDeTirajana">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_1.jpeg">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_2.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_3.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_1.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_2.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_2.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_4.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_2.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_5.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_3.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_6.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_4.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_7.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_5.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_8.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_6.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_9.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_7.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_10.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_8.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_11.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_9.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_12.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_10.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_13.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_11.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_14.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_12.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_15.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_2.jpeg" loading="lazy">
+                        <img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_16.jpeg" loading="lazy"><img alt= "Llanos de la Pez – Ventana del Nublo" src="./img/ventana_nublo/ventana_nublo_2.jpeg" loading="lazy">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Llano de la Pez - Ventana del Nublo
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    san bartolomé de tirajana
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-01-31">31-01-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            Llanos de la Pez is a beautiful area up in the
+                            mountains and the start of many different trails. 
+                            well worth a visit if you want to explore. I chose 
+                            this time to do the circular route and head upto 
+                            Ventana del Nublo. The views are breathtaking and 
+                            have to be seen to be believed.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer tejeda">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_4.jpeg">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_1.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_2.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_3.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_5.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_6.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_7.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_8.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_9.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_10.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_11.jpeg" loading="lazy">                  
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_12.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_13.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_14.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_15.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_16.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_17.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_18.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Hornos – Llanos de la Pez" src="./img/hornos/hornos_19.jpeg" loading="lazy">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Presa de Los Hornos - Llanos de la Pez
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    tejeda
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-02-01">01-02-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            This is a very beautiful area of the Island 
+                            with many trails. This time I started at Mirador
+                            Presa de Los Hornos and took the trail across the Presa 
+                            and upto Llanos de la Pez. The views are stunning. You 
+                            can take in the the scents of the pine forrest and the views 
+                            of Roque Nublo, Roque Bentayga and across to Tenerife. This
+                            is also a great place if you want to take in a beautiful sunset.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer ingenio">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_19.jpeg">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_1.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_2.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_3.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_4.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_5.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_6.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_7.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_8.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_9.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_10.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_11.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_12.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_13.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_14.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_15.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_16.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_17.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_18.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_20.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_21.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_22.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_23.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_24.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_25.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_26.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_27.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_28.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_29.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_30.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_31.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_32.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_33.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_34.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_35.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_36.jpeg" loading="lazy">
+                        <img alt= "Barranco de Guayadeque - Pico de las Nieves" src="./img/nieves/nieves_37.jpeg" loading="lazy">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Barranco de Guayadeque - Pico de las Nieves
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    ingenio
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-02-02">02-02-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            If you are up for a challenge and dont mind a long hike
+                            (28km round trip) then this route is for you. Starting in
+                            Barranco Guayadeque you make your way through this stunning
+                            valley and upto the start of the trail towards Pico de Las
+                            Nieves. The climb here takes its toll on the legs but the views
+                            are worth it. On the day I went the skies were clear and I could
+                            see across to Fuerteventura. The trail then splits off into other 
+                            trails however I continued upto Pico de Las Nieves. The views
+                            from the top are amazing and could see a clear view of Tenerife
+                            and La Gomera. On the return I took a different trail back which 
+                            stayed above Barranco Guayadeque and came down at the middle of the valley.
+                            Stunning views and lots of plants and flowers to enjoy along the way. One
+                            of my all time favourites.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer sanBartolomeDeTirajana">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Barranco del Hondo" src="./img/hondo/hondo_10.jpeg">
+                        <img alt= "Barranco del Hondo" src="./img/hondo/hondo_1.jpeg" loading="lazy">
+                        <img alt= "Barranco del Hondo" src="./img/hondo/hondo_2.jpeg" loading="lazy">
+                        <img alt= "Barranco del Hondo" src="./img/hondo/hondo_3.jpeg" loading="lazy">
+                        <img alt= "Barranco del Hondo" src="./img/hondo/hondo_4.jpeg" loading="lazy">
+                        <img alt= "Barranco del Hondo" src="./img/hondo/hondo_5.jpeg" loading="lazy">
+                        <img alt= "Barranco del Hondo" src="./img/hondo/hondo_6.jpeg" loading="lazy">
+                        <img alt= "Barranco del Hondo" src="./img/hondo/hondo_7.jpeg" loading="lazy">
+                        <img alt= "Barranco del Hondo" src="./img/hondo/hondo_8.jpeg" loading="lazy">
+                        <img alt= "Barranco del Hondo" src="./img/hondo/hondo_9.jpeg" loading="lazy">
+                        <img alt= "Barranco del Hondo" src="./img/hondo/hondo_11.jpeg" loading="lazy">
+                        <img alt= "Barranco del Hondo" src="./img/hondo/hondo_12.jpeg" loading="lazy">
+                        <img alt= "Barranco del Hondo" src="./img/hondo/hondo_13.jpeg" loading="lazy">
+                        <img alt= "Barranco del Hondo" src="./img/hondo/hondo_14.jpeg" loading="lazy">
+                        <img alt= "Barranco del Hondo" src="./img/hondo/hondo_15.jpeg" loading="lazy">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Barranco del Hondo
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    san bartolomé de tirajana
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-02-06">06-02-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            This Barranco is located down the East Coast accessed to the left of the cement 
+                            works at Playa el Cardon. The route starts to the left of the cement works and 
+                            runs along the very edge until you reach the entrance of the Barranco. The Barranco
+                            itself has dramatic steep walls with numerous caves. I visited after the rains so there
+                            were many natural pools and the stream still flowing. You can also access the Barranco
+                            by taking the route upto the Arco del Coronadero which is a natural stone arch giving
+                            amazing views down into Barranco del Hondo. From here you can take the steep trail down
+                            into the Barranco and then walk the route back out.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer firgas">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_14.jpeg">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_1.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_2.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_3.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_4.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_5.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_6.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_7.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_8.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_9.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_10.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_11.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_12.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_13.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_15.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_16.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_17.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_18.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_19.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_20.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_21.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_22.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_23.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_24.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_25.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_26.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_27.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_28.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_29.jpeg" loading="lazy">
+                        <img alt= "Barranco de Azuaje - Barranco de la Virgen" src="./img/azuaje_virgen/azuaje_virgen_30.jpeg" loading="lazy">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Firgas - Barranco De Azuaje - Barranco de la Virgen
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    firgas
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-02-08">08-02-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            Today we took a beautiful trail starting in Firgas and making our way 
+                            down into Barranco De Azuaje. The route down is stunning with lots of 
+                            different plants and trees and great views. The trail brings you into the
+                            Barranco at the abandoned hotel with its displays of grafiti art. We then
+                            followed the trail upstream which involved crossing the water backwards and
+                            forwards several times using stepping stones and fallen trees. There are numerous
+                            waterfalls and pools along the route and some great photo opportunities. This route
+                            was quite fun as it involved some climbing using ropes that are already in place.
+                            The route then continued into Barranco de la Virgen before we climbed back up the
+                            valley and headed back towards Firgas. Well worth doing if you fancy a trail with 
+                            a bit of everything.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer agaete">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_7.jpeg">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_1.jpeg" loading="lazy">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_2.jpeg" loading="lazy">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_3.jpeg" loading="lazy">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_4.jpeg" loading="lazy">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_5.jpeg" loading="lazy">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_6.jpeg" loading="lazy">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_8.jpeg" loading="lazy">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_9.jpeg" loading="lazy">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_10.jpeg" loading="lazy">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_11.jpeg" loading="lazy">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_12.jpeg" loading="lazy">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_13.jpeg" loading="lazy">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_14.jpeg" loading="lazy">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_15.jpeg" loading="lazy">
+                        <img alt= "Charco Azul" src="./img/charco_azul/charco_azul_16.jpeg" loading="lazy">                      
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Charco Azul
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    agaete
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-02-10">10-02-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            Quite a popular one on the island due to its constant water
+                            flow and easy access. Located in the North of the Island in 
+                            the village El Risco. There are numerous natural pools and
+                            beautiful views as you make your way to the big falls of Charco
+                            Azul. After the winter rains the flow is stronger and the pools
+                            are bigger but anytime of year its a beautiful place to visit.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer sanBartolomeDeTirajana">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_10.jpeg">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_1.jpeg" loading="lazy">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_2.jpeg" loading="lazy">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_3.jpeg" loading="lazy">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_4.jpeg" loading="lazy">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_5.jpeg" loading="lazy">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_6.jpeg" loading="lazy">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_7.jpeg" loading="lazy">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_8.jpeg" loading="lazy">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_9.jpeg" loading="lazy">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_11.jpeg" loading="lazy">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_12.jpeg" loading="lazy">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_13.jpeg" loading="lazy">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_14.jpeg" loading="lazy">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_15.jpeg" loading="lazy">
+                        <img alt= "Barranco del Águila/Tariscal " src="./img/tariscal/tariscal_16.jpeg" loading="lazy">                                  
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    barranco del Águila/Tariscal
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    san bartolomé de tirajana
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-02-11">11-02-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            Located down the East Coast of the island starting at Sioux City.
+                            This Barranco is very peaceful as its access is a little more difficult. 
+                            You must use the Barranco to the right of Sioux City then follow the road 
+                            through the tunnel under the GC1, continue on this road and you will arrive
+                            at the start of the Barranco at the end of Sioux City. After the winter rains
+                            the Barranco has running water and numerous natural pools. The Barranco walls are 
+                            dotted with countless caves and dramatic walls. The walk becomes more difficult towards
+                            the end as you have to follow the stream bed and climb many boulders to reach the big 
+                            waterfall at the end of the route. Note this waterfall is only active just after the rains.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer sanBartolomeDeTirajana">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_18.jpeg">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_1.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_2.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_3.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_4.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_5.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_6.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_7.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_8.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_9.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_10.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_11.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_12.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_13.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_14.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_15.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_16.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_17.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_19.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_20.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_21.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_22.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_23.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_24.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_25.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_26.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_27.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_28.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_29.jpeg" loading="lazy">
+                        <img alt= "Presa de la Gambuesa - Barranco de la Data " src="./img/gambuesa_data/gambuesa_data_30.jpeg" loading="lazy">                 
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    presa de la gambuesa - barranco de la data
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    san bartolomé de tirajana
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-02-12">12-02-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            Starting at the beautiful Presa de la Gambuesa, follow the dirt road up
+                            towards Las Tedras. This is one of my favourite routes as the views along
+                            the trail are breathtaking. The walk itself is fairly easy with only a little
+                            climb at the start. Once at the top the views are worth it. Follow the road for
+                            about an hour and you will come to an area where you can make it down to some 
+                            amazing natural pools. Crystal clear waters and a stunning landscape make this an 
+                            ideal area to visit for the day and take a swim in the refreshing mountain pools. 
+                            If you continue on the trail further you will find some bigger pools to enjoy.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer agaete">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Presa de Los Perez - Tamadaba - Mirador Llanos de la Mimbre " src="./img/mimbre/mimbre_2.jpeg">
+                        <img alt= "Presa de Los Perez - Tamadaba - Mirador Llanos de la Mimbre " src="./img/mimbre/mimbre_1.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Perez - Tamadaba - Mirador Llanos de la Mimbre " src="./img/mimbre/mimbre_3.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Perez - Tamadaba - Mirador Llanos de la Mimbre " src="./img/mimbre/mimbre_4.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Perez - Tamadaba - Mirador Llanos de la Mimbre " src="./img/mimbre/mimbre_5.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Perez - Tamadaba - Mirador Llanos de la Mimbre " src="./img/mimbre/mimbre_6.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Perez - Tamadaba - Mirador Llanos de la Mimbre " src="./img/mimbre/mimbre_7.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Perez - Tamadaba - Mirador Llanos de la Mimbre " src="./img/mimbre/mimbre_8.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Perez - Tamadaba - Mirador Llanos de la Mimbre " src="./img/mimbre/mimbre_9.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Perez - Tamadaba - Mirador Llanos de la Mimbre " src="./img/mimbre/mimbre_10.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Perez - Tamadaba - Mirador Llanos de la Mimbre " src="./img/mimbre/mimbre_11.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Perez - Tamadaba - Mirador Llanos de la Mimbre " src="./img/mimbre/mimbre_12.jpeg" loading="lazy">
+                        <img alt= "Presa de Los Perez - Tamadaba - Mirador Llanos de la Mimbre " src="./img/mimbre/mimbre_13.jpeg" loading="lazy">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Presa de Los Perez - Tamadaba - Mirador Llanos de la Mimbre
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    agaete
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-02-13">13-02-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            We took the drive up through Artenara towards Presa de Los Perez where we stared the trail.
+                            The views on the drive up are amazing. Crossing the Dam wall at Presa de Los Perez you begin
+                            the climb up into the Tamadaba National Park. Its a long climb upto the top but the views are worth it. 
+                            Once at the top we followed the trail through the pine forest towards Mirador Llanos de la Mimbre. 
+                            This wooden platform on the edge of the cliffs gives you one of the best viewpoints on the island. 
+                            The height alone makes you feel like you are flying but the views need to be seen to be believed. 
+                            The day I went was a nice clear day and the view of Tenerife was clear enough to be able to see 
+                            the buildings in Santa Cruz.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer laAldeaDeSanNicolas">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Playa de La Aldea - La Cola del Dragón " src="./img/playa_aldea/playa_aldea_12.jpeg">
+                        <img alt= "Playa de La Aldea - La Cola del Dragón " src="./img/playa_aldea/playa_aldea_1.jpeg" loading="lazy">
+                        <img alt= "Playa de La Aldea - La Cola del Dragón " src="./img/playa_aldea/playa_aldea_2.jpeg" loading="lazy">
+                        <img alt= "Playa de La Aldea - La Cola del Dragón " src="./img/playa_aldea/playa_aldea_3.jpeg" loading="lazy">
+                        <img alt= "Playa de La Aldea - La Cola del Dragón " src="./img/playa_aldea/playa_aldea_4.jpeg" loading="lazy">
+                        <img alt= "Playa de La Aldea - La Cola del Dragón " src="./img/playa_aldea/playa_aldea_5.jpeg" loading="lazy">
+                        <img alt= "Playa de La Aldea - La Cola del Dragón " src="./img/playa_aldea/playa_aldea_6.jpeg" loading="lazy">
+                        <img alt= "Playa de La Aldea - La Cola del Dragón " src="./img/playa_aldea/playa_aldea_7.jpeg" loading="lazy">
+                        <img alt= "Playa de La Aldea - La Cola del Dragón " src="./img/playa_aldea/playa_aldea_8.jpeg" loading="lazy">
+                        <img alt= "Playa de La Aldea - La Cola del Dragón " src="./img/playa_aldea/playa_aldea_9.jpeg" loading="lazy">
+                        <img alt= "Playa de La Aldea - La Cola del Dragón " src="./img/playa_aldea/playa_aldea_10.jpeg" loading="lazy">
+                        <img alt= "Playa de La Aldea - La Cola del Dragón " src="./img/playa_aldea/playa_aldea_11.jpeg" loading="lazy">          
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Playa de La Aldea - La Cola del Dragón
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    la aldea de san nicolás
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-02-15">15-02-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            This is a circular route in the North of the Island starting 
+                            behind the tourist information center at Playa de la Aldea. 
+                            The route takes you into the valley and up towards the viewpoint 
+                            at La Cola del Dragon. The views here are very dramatic with steep 
+                            cliff walls towering over the Atlantic Ocean. You then make your way 
+                            back towards the viewpoint at Punta de La Aldea before following the 
+                            trail back down to the secluded beach of Playa de El Puerto. We stopped
+                            here for a while to enjoy a dip in the Ocean and cool off before finishing
+                            the route.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer laAldeaDeSanNicolas">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_25.jpeg">
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_1.jpeg" loading="lazy">
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_2.jpeg" loading="lazy">
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_3.jpeg" loading="lazy">
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_4.jpeg" loading="lazy">
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_5.jpeg" loading="lazy">
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_6.jpeg" loading="lazy">
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_7.jpeg" loading="lazy">
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_8.jpeg" loading="lazy">
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_9.jpeg" loading="lazy">
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_10.jpeg" loading="lazy">
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_11.jpeg" loading="lazy">          
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_12.jpeg" loading="lazy">          
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_13.jpeg" loading="lazy">          
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_14.jpeg" loading="lazy">          
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_15.jpeg" loading="lazy">          
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_16.jpeg" loading="lazy">          
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_17.jpeg" loading="lazy">          
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_18.jpeg" loading="lazy">          
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_19.jpeg" loading="lazy">          
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_20.jpeg" loading="lazy">          
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_21.jpeg" loading="lazy">          
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_22.jpeg" loading="lazy">          
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_23.jpeg" loading="lazy">          
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_24.jpeg" loading="lazy">          
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_26.jpeg" loading="lazy">          
+                        <img alt= "Barranco del Pino Gordo" src="./img/pino_gordo/pino_gordo_27.jpeg" loading="lazy">                           
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    barranco del pino gordo
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    la aldea de san nicolás
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-02-18">18-02-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            Located in the North of the Island near La Aldea. The Barranco has a very dramatic 
+                            feel with steep cliffs, waterfalls and plenty of mountain pools to swim in after 
+                            the winter rains. The views in this area are some of my favourites and the walk through
+                            the valley is stunning. If you dont mind a long drive upto the North then this is well 
+                            worth going to visit.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer sanBartolomeDeTirajana">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Degoyada de las Yeguas - Fataga" src="./img/yeguas/yeguas_2.jpeg" loading="lazy">
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_1.jpeg" loading="lazy">
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_3.jpeg" loading="lazy">
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_4.jpeg" loading="lazy">
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_5.jpeg" loading="lazy">
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_6.jpeg" loading="lazy">
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_7.jpeg" loading="lazy">
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_8.jpeg" loading="lazy">
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_9.jpeg" loading="lazy">
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_10.jpeg" loading="lazy">
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_11.jpeg" loading="lazy">          
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_12.jpeg" loading="lazy">          
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_13.jpeg" loading="lazy">          
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_14.jpeg" loading="lazy">          
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_15.jpeg" loading="lazy">          
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_16.jpeg" loading="lazy">          
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_17.jpeg" loading="lazy">          
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_18.jpeg" loading="lazy">          
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_19.jpeg" loading="lazy">          
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_20.jpeg" loading="lazy">          
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_21.jpeg" loading="lazy">          
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_22.jpeg" loading="lazy">          
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_23.jpeg" loading="lazy">          
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_24.jpeg" loading="lazy">          
+                        <img alt= "Degollada de las Yeguas - Fataga" src="./img/yeguas/yeguas_26.jpeg" loading="lazy">          
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Degollada de las Yeguas - Fataga
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    san bartolomé de tirajana
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-02-18">18-02-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            This is one of the most difficult routes I have taken, mostly due
+                            to the very steep decent down into Fataga at the end of the trail. 
+                            When I say steep I actually mean climbing down a cliff wall with very 
+                            little room for error. Adrenaline was pumping for this one. The views 
+                            along the way were amazing looking down into the valley. As this route
+                            is oneway we had to take a bus back from Fataga to the viewpoint where 
+                            we started the trail. As the next bus was 3 hours wait we decided to stop
+                            and take in some delicious tapas in Restaurante Albaricoque.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer ingenio">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_10.jpeg" loading="lazy">
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_1.jpeg" loading="lazy">
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_2.jpeg" loading="lazy">
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_3.jpeg" loading="lazy">
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_4.jpeg" loading="lazy">
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_5.jpeg" loading="lazy">
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_6.jpeg" loading="lazy">
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_7.jpeg" loading="lazy">
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_8.jpeg" loading="lazy">
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_9.jpeg" loading="lazy">
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_11.jpeg" loading="lazy">          
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_12.jpeg" loading="lazy">          
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_13.jpeg" loading="lazy">          
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_14.jpeg" loading="lazy">          
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_15.jpeg" loading="lazy">          
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_16.jpeg" loading="lazy">          
+                        <img alt= "Ingenio – La Atalaya – Seto grillo" src="./img/seto_grillo/seto_grillo_17.jpeg" loading="lazy">            
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Ingenio - La Atalaya - Seto grillo
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    ingenio
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-02-25">25-02-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            This route started at the top of my home town Ingenio and took us along 
+                            the top of Barranco Quayadeque and upto La Atalya and the caves before 
+                            making our way back down on the trail towards Seto Grillo and arriving 
+                            back into Ingenio. This route took us through some beautiful wild flower
+                            meadows with views into Guayadeque and down towards the coast.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer laAldeaDeSanNicolas">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_8.jpeg" loading="lazy">
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_1.jpeg" loading="lazy">
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_2.jpeg" loading="lazy">
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_3.jpeg" loading="lazy">
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_4.jpeg" loading="lazy">
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_5.jpeg" loading="lazy">
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_6.jpeg" loading="lazy">
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_7.jpeg" loading="lazy">
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_9.jpeg" loading="lazy">
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_10.jpeg" loading="lazy">
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_11.jpeg" loading="lazy">          
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_12.jpeg" loading="lazy">          
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_13.jpeg" loading="lazy">          
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_14.jpeg" loading="lazy">          
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_15.jpeg" loading="lazy">          
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_16.jpeg" loading="lazy">          
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_17.jpeg" loading="lazy">          
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_18.jpeg" loading="lazy">          
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_19.jpeg" loading="lazy">          
+                        <img alt= "Tasartico - Güigüi" src="./img/guigui/guigui_20.jpeg" loading="lazy">                              
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    tasartico - güigüi
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    la aldea de san nicolás
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-02-26">26-02-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            This is one of the most iconic routes on the Island and almost a right of passage.
+                            After trying this route 1.5 years ago and swearing never to do it again, I decided 
+                            id give it another try as I had been doing daily hikes for the last month and felt much stronger.
+                            This route is a difficult one on the legs. There is a long steep climb upto the peak before you 
+                            cross over and descend down the other side towards Güigüi. The last time I tried this route it 
+                            took 2hrs 30 mins each way however this time it only took 1hr 40 mins each way so a good fitness
+                            level makes it easier. The views along the route are very dramatic with steep cliffs, deep valleys 
+                            and Ocean views. The beach itself is nothing exciting and very similar to Guayedra beach near Puerto
+                            de Las Nieves. If you do want to attempt this one make so you wear hiking boots and take plenty of 
+                            food and water as you will need it.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer sanBartolomeDeTirajana">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_1.jpg" loading="lazy">
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_2.jpg" loading="lazy">
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_3.jpg" loading="lazy">
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_4.jpg" loading="lazy">
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_5.jpg" loading="lazy">
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_6.jpg" loading="lazy">
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_7.jpg" loading="lazy">
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_8.jpg" loading="lazy">
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_9.jpg" loading="lazy">
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_10.jpg" loading="lazy">
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_11.jpg" loading="lazy">          
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_12.jpg" loading="lazy">          
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_13.jpg" loading="lazy">          
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_14.jpg" loading="lazy">          
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_15.jpg" loading="lazy">          
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_16.jpg" loading="lazy">          
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_17.jpg" loading="lazy">          
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_18.jpg" loading="lazy">          
+                        <img alt= "Ayagaures – Parque Natural de Pilancones – Las Tederas" src="./img/tederas/tederas_19.jpg" loading="lazy">          
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Ayagaures- Parque Natural de Pilancones - Las Tederas
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    san bartolomé de tirajana
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-03-02">02-03-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            This National Park is well worth a visit, dramatic landscapes,
+                            natural pools, pine forests and amazing views. I have visited 
+                            this area several times however this time we decided to do the circular route,
+                            19km of breathtaking and and forever changing views. The route starts at Presa de 
+                            Gambuesa and up towards Las Tederas where the natural pools are located. From here the
+                            route moves into the pine forest, please be aware the signs say the route is closed due to
+                            landslide however there is a path through but take this at your own risk. Once into the forest the 
+                            views are beautiful, steep valley walls and a pine scented walkway. The path does take a steep 
+                            climb up after a while where you can continue on to Tunte (mentioned in an earlier update) or 
+                            you can head back towards Ayagaures. You are much higher on this side of the valley 
+                            so the views are incredible.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer aguimes">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_4.jpg" loading="lazy">
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_1.jpg" loading="lazy">
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_2.jpg" loading="lazy">
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_3.jpg" loading="lazy">
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_5.jpg" loading="lazy">
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_6.jpg" loading="lazy">
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_7.jpg" loading="lazy">
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_8.jpg" loading="lazy">
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_9.jpg" loading="lazy">
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_10.jpg" loading="lazy">
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_11.jpg" loading="lazy">          
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_12.jpg" loading="lazy">          
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_13.jpg" loading="lazy">          
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_14.jpg" loading="lazy">          
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_15.jpg" loading="lazy">          
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_16.jpg" loading="lazy">          
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_17.jpg" loading="lazy">          
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_18.jpg" loading="lazy">          
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_19.jpg" loading="lazy">    
+                        <img alt= "Barranco Guayadeque – Cruz del Socorro circular" src="./img/socorro/socorro_20.jpg" loading="lazy">                            
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Barranco Guayadeque – Cruz del Socorro circular
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    agüimes
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-03-05">05-03-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            I have visited this barranco many times and taken different routes as 
+                            mentioned in previous blogs. This time we chose the Circular route upto 
+                            Cruz del Socorro and across the top of the ravine back to the start. This 
+                            16km route is stunning. The valley is filled with wild flowers and old abandoned 
+                            buildings. The climb at the Caldera is tough on the legs but it takes you up 
+                            through the pine trees to Cruz del Socorro. At this point you can choose several 
+                            different routes. We chose the route towards Santa Lucia which takes you along a 
+                            dirt road across the top of the valley with amazing views on both sides. At the 
+                            end of the road you begin the climb back down into Barranco Guayadeque. The path 
+                            takes you along the valley walls about half way back into the barranco where you 
+                            meet the original path back towards your car. Amazing views and an abundance of 
+                            wild flowers make this route very special.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+                <div class="hikeContainer aguimes">
+                    <div class="imageGallery hideScrollBars">
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_17.jpg" loading="lazy">          
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_1.jpg" loading="lazy">
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_2.jpg" loading="lazy">
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_3.jpg" loading="lazy">
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_4.jpg" loading="lazy">
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_5.jpg" loading="lazy">
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_6.jpg" loading="lazy">
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_7.jpg" loading="lazy">
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_8.jpg" loading="lazy">
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_9.jpg" loading="lazy">
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_10.jpg" loading="lazy">
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_11.jpg" loading="lazy">          
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_12.jpg" loading="lazy">          
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_13.jpg" loading="lazy">          
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_14.jpg" loading="lazy">          
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_15.jpg" loading="lazy">          
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_16.jpg" loading="lazy">          
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_18.jpg" loading="lazy">          
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_19.jpg" loading="lazy">    
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_20.jpg" loading="lazy">                            
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_21.jpg" loading="lazy">                            
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_22.jpg" loading="lazy">                            
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_23.jpg" loading="lazy">                            
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_24.jpg" loading="lazy">                            
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_25.jpg" loading="lazy">                            
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_26.jpg" loading="lazy">                            
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_27.jpg" loading="lazy">                            
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_28.jpg" loading="lazy">                            
+                        <img alt= "Guayadeque – Cueva Bermeja – Santa Lucia" src="./img/bermeja/bermeja_29.jpg" loading="lazy">                            
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Guayadeque - Cueva Bermeja - Santa Lucia
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    agüimes
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hikeLength">
+                                    --
+                                </td>
+                                <td class="hikeTime">
+                                    --
+                                </td>
+                                <td class="hikeLog">
+                                    <time datetime="2021-03-08">08-03-2021</time>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="hikeInfo hideScrollBars">
+                        <p>
+                            This 22km return route really is beautiful. Wild flower meadows, 
+                            mountain top views and a historical town. Starting in Guayadeque 
+                            at the carpark below the last restaurants the path takes you up a 
+                            very steep and intense climb upto the top of the barranco. It took 
+                            us about 45 mins climbing to reach the top. Nerves of steel required 
+                            as the climb is very steep and you really are walking on the edge. 
+                            Once at the top you come to the Cueva Bermeja with breath taking views 
+                            down into Barranco Guayadeque. Continue on a little further and you 
+                            reach the sign for several different routes. This time we took the 
+                            path for Santa Lucia. From this point the route to Santa Lucia is 
+                            mostly downhill. The path takes you through beautiful flower meadows 
+                            with views down to the coast and across several other barrancos. 
+                            Once you reach the peak looking down to Santa Lucia the views have 
+                            to be seen to be believed, stunning views down to the town with 
+                            mountain peaks behind. The route takes a winding path down into the 
+                            town of Santa Lucia where we stopped to take a look in the church 
+                            before having lunch. On the return the route is mostly uphill and 
+                            was quite tiring but again the views are worth it, we also took a 
+                            small detour to look at an abandoned mine with its rail tracks. In 
+                            total it took us 5 hours walking with an hour stop for lunch in 
+                            Santa Lucia. A great trail if you want some views.
+                        </p>
+                    </div>
+                    <button onclick="toggleInfo()">&#61543;</button	>
+                </div>
+            </div>
+            <div class="aboutClass">
+                <img alt="Picture of Me" src="./img/jacobeo_2021.png">
+                <h2 id="caminoDeSantiago">camino de santiago</h2>
+                <p>
+                    *** updates to follow! ***      
+                </p>
+            </div>
+            <div class="aboutClass">
+                <img alt="Picture of Me" src="./img/mimbre/mimbre_13.jpeg">
+                <h2 id="about">about me</h2>
+                <p>
+                    My name is Dean and I want to share my Island adventures with you all.
+                    Originally from the UK but now living on the beautiful Island of Gran Canaria off the Northwest coast of Africa.
+                    I moved to the island Feb 2017 and it was the best decision of my life. I have a passion for adventure and love to explore in my free time. The best thing is to jump into your car head for somewhere new and see what you find. This is how I’ve found many of this islands secrets.
+                    I decided to start this blog after several friends suggested I start one after seeing the pictures I had taken during my days out exploring.
+                </p>
+            </div>
+            <div class="aboutClass">
+                <img alt="Picture of Me" src="./img/gran_canaria.png">
+                <h2>gran canaria</h2>
+                <p>
+                    Gran Canaria is a small island located in the Atlantic
+                    Ocean and is approximately 150 kilometres off the northwestern
+                    coast of Africa. With an area of 1,560 km2 (602 sq. mi) and an 
+                    altitude of 1,956 m (6,417 ft) at Morro de la Agujereada, Gran 
+                    Canaria is the third largest island of the archipelago in both 
+                    area and altitude.               
+                </p>
+                <a class="buttonClass" href="https://en.wikipedia.org/wiki/Gran_Canaria" target="_blank">read more</a>
+            </div>
+        </main>
+        <footer id="theContact">
+            <p>If you have any questions or want to know more about a particular place drop me a message on the below.</p>
+            <br>
+            <a href="https://www.facebook.com/dean.carter.3152" target="_blank"><span>&#62366;</span> dean.carter.3152</a>
+            <br>
+            <a href="https://www.instagram.com/dcgc79" target="_blank"><span>&#61805;</span>@dcgc79</a>
+        </footer>
+        <script src="functions.js"></script>
+    </body>
 </html>
