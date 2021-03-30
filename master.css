@@ -295,6 +295,14 @@ table {
 
 }
 
+
+.generalInfo {
+	display: flex;
+	flex-direction: column;
+	background: var(--myTurquois);
+	padding: 
+}
+
 .aboutClass {
 	display: flex;
 	flex-direction: column;
@@ -322,7 +330,6 @@ table {
 }
 
 .aboutClass p {
-	align-self: flex-start;
 	padding: 15px 0;
 	text-indent: 30px;
 }
@@ -406,7 +413,7 @@ footer span:hover {
 	}
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1000px) {
 	.mainWrapper {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -414,5 +421,16 @@ footer span:hover {
 	.hikeContainer, .imageGallery, .imageGallery img {
 		width: 25vw;		
 		/* align-items: stretch; */
+	}
+
+	.generalInfo {		
+		flex-direction: row;
+		flex-wrap: wrap;	
+	}
+
+	.aboutClass {
+		/* width: 25%; */
+		flex: 0 0 30%;
+		/* border: 2px solid black; */
 	}
 }
