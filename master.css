@@ -398,29 +398,14 @@ footer span:hover {
 }
 
 @media only screen and (min-width: 500px) {
-	.mainWrapper {
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-
-	.hikeContainer {
-		align-self: flex-start;
-
-	}
-
 	.hikeContainer, .imageGallery, .imageGallery img {
 		width: 35vw;		
 	}
 }
 
 @media only screen and (min-width: 1000px) {
-	.mainWrapper {
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
 	.hikeContainer, .imageGallery, .imageGallery img {
 		width: 25vw;		
-		/* align-items: stretch; */
 	}
 
 	.generalInfo {		
@@ -429,8 +414,6 @@ footer span:hover {
 	}
 
 	.aboutClass {
-		/* width: 25%; */
 		flex: 0 0 30%;
-		/* border: 2px solid black; */
 	}
 }
